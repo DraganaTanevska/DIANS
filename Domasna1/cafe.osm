@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><osm version="0.6" generator="Overpass API 0.7.57.1 74a55df1">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2021-11-14T01:07:17Z"/>
+
+  <node id="2377968940" lat="41.1131665" lon="20.7995188">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Два бисера"/>
+  </node>
+  <node id="2377968948" lat="41.1131208" lon="20.7992346">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Milenium"/>
+  </node>
+  <node id="2377969086" lat="41.1130197" lon="20.7991420">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Slavica Kafe"/>
+  </node>
+  <node id="2377969191" lat="41.1129743" lon="20.7990978">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Instinct"/>
+    <tag k="outdoor_seating" v="yes"/>
+    <tag k="wheelchair" v="no"/>
+  </node>
+  <node id="2377969197" lat="41.1130834" lon="20.7992077">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Galerija"/>
+  </node>
+  <node id="2377969339" lat="41.1129098" lon="20.7990480">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="ВЛАДИ"/>
+    <tag k="outdoor_seating" v="yes"/>
+    <tag k="wheelchair" v="no"/>
+  </node>
+  <node id="3005353406" lat="41.1118183" lon="20.7967146">
+    <tag k="amenity" v="cafe"/>
+    <tag k="int_name" v="Kadmo bar"/>
+    <tag k="name" v="Кадмо-бар"/>
+  </node>
+  <node id="3100113827" lat="41.1135786" lon="20.8010580">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Cafe Experience"/>
+  </node>
+  <node id="3826400436" lat="41.1127823" lon="20.8023447">
+    <tag k="amenity" v="cafe"/>
+  </node>
+  <node id="3826400441" lat="41.1124655" lon="20.8021988">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Mojito"/>
+  </node>
+  <node id="4433338390" lat="41.1169520" lon="20.7984934">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Çajtorja Luan"/>
+    <tag k="name:en" v="Cafe Luan"/>
+    <tag k="name:mk" v="Çajtorja Luan"/>
+  </node>
+  <node id="5604366922" lat="41.1146400" lon="20.7914964">
+    <tag k="amenity" v="cafe"/>
+  </node>
+  <node id="5836414523" lat="41.1246206" lon="20.8118811">
+    <tag k="amenity" v="cafe"/>
+  </node>
+  <node id="5890717252" lat="41.1073742" lon="20.8071883">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Liquid"/>
+    <tag k="name:mk" v="Ликвид"/>
+  </node>
+  <node id="6581571196" lat="41.1117759" lon="20.7963625">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Liquid"/>
+  </node>
+  <node id="6777937586" lat="41.1167343" lon="20.7986778">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Çaytore Istanbul"/>
+  </node>
+  <node id="6831648812" lat="41.1146792" lon="20.8006165">
+    <tag k="amenity" v="cafe"/>
+  </node>
+  <node id="6831648815" lat="41.1133950" lon="20.8043172">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Fabrique"/>
+  </node>
+  <node id="6833101187" lat="41.1140454" lon="20.8003342">
+    <tag k="amenity" v="cafe"/>
+  </node>
+  <node id="6833103493" lat="41.1163114" lon="20.7998314">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Una caffe"/>
+  </node>
+  <node id="6837039792" lat="41.1168925" lon="20.7980830">
+    <tag k="amenity" v="cafe"/>
+  </node>
+  <node id="6837039793" lat="41.1169490" lon="20.7981895">
+    <tag k="amenity" v="cafe"/>
+  </node>
+
+</osm>

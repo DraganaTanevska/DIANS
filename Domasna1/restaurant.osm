@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><osm version="0.6" generator="Overpass API 0.7.57.1 74a55df1">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2021-11-13T17:11:28Z"/>
+
+  <node id="2377937978" lat="41.1084477" lon="20.8123651">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Restoran Gros"/>
+  </node>
+  <node id="2377938382" lat="41.1028959" lon="20.8148703">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Ресторан Билјанини Извори"/>
+    <tag k="name:en" v="Biljanini Izvori Restaurant"/>
+  </node>
+  <node id="2377968960" lat="41.1127562" lon="20.8086261">
+    <tag k="amenity" v="restaurant"/>
+  </node>
+  <node id="2377968987" lat="41.1120004" lon="20.8091572">
+    <tag k="amenity" v="restaurant"/>
+  </node>
+  <node id="2377969305" lat="41.1126257" lon="20.7987652">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name:en" v="Lihnidos"/>
+  </node>
+  <node id="2377969373" lat="41.1041510" lon="20.8079475">
+    <tag k="amenity" v="restaurant"/>
+  </node>
+  <node id="2759066732" lat="41.1123103" lon="20.8011769">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="regional"/>
+    <tag k="name" v="Белведере"/>
+    <tag k="name:en" v="Belvedere"/>
+    <tag k="smoking" v="outside"/>
+  </node>
+  <node id="3005348015" lat="41.1163875" lon="20.8006074">
+    <tag k="amenity" v="restaurant"/>
+  </node>
+  <node id="3005348016" lat="41.1163410" lon="20.8002909">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Meydan"/>
+  </node>
+  <node id="3100113750" lat="41.1140172" lon="20.8026136">
+    <tag k="addr:city" v="Охрид"/>
+    <tag k="addr:housenumber" v="20a"/>
+    <tag k="addr:postcode" v="6000"/>
+    <tag k="addr:street" v="Димитар Влахов"/>
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="regional"/>
+    <tag k="name" v="Фopтунa"/>
+    <tag k="name:en" v="Fortuna"/>
+    <tag k="opening_hours" v="Mo-Su 07:00-24:00"/>
+    <tag k="smoking" v="outside"/>
+  </node>
+  <node id="3428427693" lat="41.1154200" lon="20.8000470">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="italian"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Pizzeria Americano"/>
+    <tag k="outdoor_seating" v="yes"/>
+    <tag k="smoking" v="outside"/>
+  </node>
+  <node id="3428428993" lat="41.1159660" lon="20.8000880">
+    <tag k="amenity" v="restaurant"/>
+  </node>
+  <node id="3826400404" lat="41.1119481" lon="20.8015550">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Ривиера"/>
+    <tag k="name:en" v="Riviera"/>
+  </node>
+  <node id="3826400416" lat="41.1104511" lon="20.8039749">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Ла Бела"/>
+    <tag k="name:en" v="La Bella"/>
+  </node>
+  <node id="3826400434" lat="41.1095360" lon="20.8052329">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Royal View"/>
+  </node>
+  <node id="4253086993" lat="41.1166205" lon="20.8011081">
+    <tag k="addr:housenumber" v="8"/>
+    <tag k="addr:postcode" v="6000"/>
+    <tag k="addr:street" v="7 Ноември"/>
+    <tag k="amenity" v="restaurant"/>
+    <tag k="diet:vegetarian" v="yes"/>
+    <tag k="name" v="Dr. Falafel"/>
+    <tag k="opening_hours" v="Mo-Sa 09:30-22:30, Su 16:00-23:00"/>
+    <tag k="phone" v="+389 77 897 167"/>
+  </node>
+  <node id="4283863605" lat="41.1124024" lon="20.7972577">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Ресторан Антико"/>
+  </node>
+  <node id="4429141992" lat="41.1168867" lon="20.7986796">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Brioni 2008"/>
+    <tag k="name:en" v="Brioni 2008"/>
+    <tag k="name:mk" v="Brioni 2008"/>
+  </node>
+  <node id="4429142391" lat="41.1169309" lon="20.7985841">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Exclusive Art Cuisine"/>
+    <tag k="name:en" v="Exklusive Art Cuisine"/>
+    <tag k="name:mk" v="Exklusive Art Cuisine"/>
+  </node>
+  <node id="4879772021" lat="41.1148473" lon="20.7934666">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Гладиатор"/>
+    <tag k="name:en" v="Gladiator"/>
+  </node>
+  <node id="4884870823" lat="41.1109837" lon="20.7905430">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Кај Каневче"/>
+    <tag k="name:en" v="Kaj Kanevche"/>
+  </node>
+  <node id="4986923021" lat="41.1121780" lon="20.7982792">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Порта"/>
+    <tag k="name:en" v="Porta"/>
+    <tag k="name:mk" v="Порта"/>
+  </node>
+  <node id="4993144523" lat="41.1118507" lon="20.7969483">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="int_name" v="Dalga"/>
+    <tag k="name" v="Далга"/>
+  </node>
+  <node id="5075880321" lat="41.0902867" lon="20.7991080">
+    <tag k="addr:housenumber" v="10A"/>
+    <tag k="addr:street" v="Naum Ohridski"/>
+    <tag k="amenity" v="restaurant"/>
+    <tag k="email" v="beachgiovani@gmail.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="БИЧ ЕНД ЛОУНЏ ЏОВАНИ"/>
+    <tag k="name:en" v="Giovani Beach Lounge Bar"/>
+    <tag k="name:mk" v="БИЧ ЕНД ЛОУНЏ ЏОВАНИ"/>
+    <tag k="opening_hours" v="Mo-Sa 08:00-01:00; Su 09:00-00:00"/>
+    <tag k="phone" v="070230030"/>
+  </node>
+  <node id="5107879522" lat="41.1121065" lon="20.7954009">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="balkan;italian"/>
+    <tag k="name:en" v="Saraishte"/>
+  </node>
+  <node id="5108011329" lat="41.1118748" lon="20.7971539">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="balkan;italian"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name:en" v="Noa"/>
+  </node>
+  <node id="5448461921" lat="41.1122361" lon="20.7981623">
+    <tag k="addr:postcode" v="6000"/>
+    <tag k="addr:street" v="Цар Самоил"/>
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="italian_pizza"/>
+    <tag k="email" v="contact@pizzanemo.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Пица Александриа"/>
+    <tag k="name:en" v="Pizza Aleksandrija"/>
+    <tag k="opening_hours" v="Su-Th 09:00-00:00; Fr-Sa 09:00-01:00"/>
+    <tag k="phone" v="+389 46 253 355"/>
+    <tag k="website" v="http://www.pizzanemo.com"/>
+  </node>
+  <node id="5602643621" lat="41.1121475" lon="20.7980562">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Pizza Aleksandrija"/>
+  </node>
+  <node id="5625896923" lat="41.1166966" lon="20.7992364">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="regional"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name:en" v="Adana II"/>
+  </node>
+  <node id="5890717249" lat="41.1069789" lon="20.8075280">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="italian"/>
+    <tag k="name" v="Ristorante Stazione"/>
+  </node>
+  <node id="5897434185" lat="41.1259308" lon="20.8157042">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Ресторан Панорама"/>
+    <tag k="name:en" v="Restoran Panorama"/>
+    <tag k="opening_hours" v="Mo-Su 07:00-23:55"/>
+  </node>
+  <node id="5942100285" lat="41.1124235" lon="20.7980320">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Kaj Ksantani Restaurant"/>
+  </node>
+  <node id="6393028782" lat="41.1156043" lon="20.8012066">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="regional"/>
+    <tag k="diet:vegetarian" v="yes"/>
+    <tag k="name" v="Macedonska Sofra"/>
+  </node>
+  <node id="6393029979" lat="41.1133047" lon="20.7995680">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Letnica Kitchen &amp; Bar"/>
+  </node>
+  <node id="6419154286" lat="41.1118551" lon="20.7971991">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name:en" v="Terrazza Aquarius"/>
+  </node>
+  <node id="6553038892" lat="41.0911484" lon="20.8000190">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="regional"/>
+    <tag k="name" v="Divono"/>
+  </node>
+  <node id="6556622586" lat="41.1066934" lon="20.8098566">
+    <tag k="addr:postcode" v="6000"/>
+    <tag k="addr:street" v="Партизанска"/>
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="barbecue;mediterranean"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Ресторан Орфеј"/>
+    <tag k="name:en" v="Resraurant Orfej"/>
+    <tag k="opening_hours" v="Mo-Su 08:00-23:00"/>
+    <tag k="phone" v="075463446"/>
+  </node>
+  <node id="6657130385" lat="41.1122342" lon="20.7983919">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name:en" v="Cun"/>
+  </node>
+  <node id="6831632793" lat="41.1145687" lon="20.8003256">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Alpi"/>
+  </node>
+  <node id="6831648796" lat="41.1119760" lon="20.8078783">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Leopard"/>
+  </node>
+  <node id="6831648800" lat="41.1103498" lon="20.8056915">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Amfora"/>
+    <tag k="name:en" v="FONTANA"/>
+  </node>
+  <node id="6831648890" lat="41.1122508" lon="20.8070573">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Centro"/>
+  </node>
+  <node id="6831648891" lat="41.1139038" lon="20.8107333">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Pizzeria"/>
+  </node>
+  <node id="6833100785" lat="41.1117071" lon="20.8049184">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Europa"/>
+  </node>
+  <node id="6834463391" lat="41.1069136" lon="20.8097800">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Orfej"/>
+  </node>
+  <node id="6837039887" lat="41.1079577" lon="20.8066516">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Madera"/>
+  </node>
+  <node id="8601528017" lat="41.1162839" lon="20.8040422">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name:en" v="RESTAURANT"/>
+  </node>
+  <node id="9038574017" lat="41.1126502" lon="20.7986382">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name:en" v="Nemo Pizza"/>
+  </node>
+  <node id="9040234627" lat="41.1130145" lon="20.8048774">
+    <tag k="addr:city" v="Ohrid"/>
+    <tag k="addr:housenumber" v="44"/>
+    <tag k="addr:street" v="Dimitar Vlahov"/>
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="sushi"/>
+    <tag k="diet:pescetarian" v="yes"/>
+    <tag k="diet:vegetarian" v="yes"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="internet_access:fee" v="customers"/>
+    <tag k="level" v="0"/>
+    <tag k="microbrewery" v="no"/>
+    <tag k="name" v="oTTo"/>
+    <tag k="opening_hours" v="11:00"/>
+    <tag k="outdoor_seating" v="yes"/>
+    <tag k="phone" v="+38976203108"/>
+    <tag k="takeaway" v="yes"/>
+    <tag k="website" v="https://www.facebook.com/otto.good.mood.food"/>
+    <tag k="wheelchair" v="yes"/>
+  </node>
+  <node id="9161033019" lat="41.1166832" lon="20.8013591">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Corner"/>
+  </node>
+  <node id="9161046817" lat="41.1182878" lon="20.8000296">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Kaj Tzitzo"/>
+  </node>
+  <node id="9200216156" lat="41.1162475" lon="20.7986294">
+    <tag k="amenity" v="restaurant"/>
+  </node>
+  <node id="9200216723" lat="41.1108108" lon="20.7915880">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Potpes"/>
+  </node>
+
+</osm>
