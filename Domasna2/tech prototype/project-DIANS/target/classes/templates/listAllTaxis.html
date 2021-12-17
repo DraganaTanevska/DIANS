@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -10,6 +10,15 @@ NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a> <a
 List of taxi.
 <br>
 TODO: search, delete, add, rate.
+<th:block th:each="taxi:${taxis}">
+    <div>
+        <div name="id" th:value="${taxi.getId()}" th:text="${taxi.getName()}">
+            <a th:href="@{'/taxi/add-form/{id}' (id=${taxi.getId()})}">Edit NOT IMPLEMENTED</a>
+            <a th:href="@{'/taxi/delete/{id}' (id=${taxi.getId())})}">Delete</a>
+            <a th:href="@{'/taxi/add-rate/{id}' (id=${taxi.getId()})}">Add Rate for this parking NOT IMPLEMENTED</a>
+        </div>
+    </div>
+</th:block>
 <br>
 <a href="/taxi/add-new">Add new taxi</a><br>
 <a href="/home">Back</a>
