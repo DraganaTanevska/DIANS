@@ -1,13 +1,11 @@
 package mk.ukim.finki.dians.projectdians.model;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @Entity
+@Table(name="Map_User")
 public class User {
     @Id
     private String username;

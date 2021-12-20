@@ -3,7 +3,6 @@ package mk.ukim.finki.dians.projectdians.service.impl;
 import mk.ukim.finki.dians.projectdians.model.User;
 import mk.ukim.finki.dians.projectdians.repository.UserRepository;
 import mk.ukim.finki.dians.projectdians.service.UserService;
-import org.apache.catalina.User;
 import org.springframework.stereotype.Service;
 
 @Service

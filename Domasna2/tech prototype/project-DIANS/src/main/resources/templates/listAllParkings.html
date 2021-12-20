@@ -13,11 +13,11 @@ TODO: search, delete, add, rate...
 
 <th:block th:each="parking:${parkings}">
     <div>
-        <div name="id" th:value="${parking.getId()}" th:text="${parking.getName()}">
-        <a th:href="@{'/parking/add-form/{id}' (id=${parking.getId()})}">Edit NOT IMPLEMENTED</a>
-        <a th:href="@{'/parking/delete/{id}' (id=${parking.getId())})}">Delete</a>
+        <div name="id" th:value="${parking.getId()}" th:text="${parking.getName()}"></div>
+        <a th:href="@{'/parking/edit-form/{id}' (id=${parking.getId()})}">Edit NOT IMPLEMENTED</a>
+        <a th:href="@{'/parking/delete/{id}' (id=${parking.getId()})}">Delete</a>
         <a th:href="@{'/parking/add-rate/{id}' (id=${parking.getId()})}">Add Rate for this parking NOT IMPLEMENTED</a>
-        </div>
+
     </div>
 </th:block>
 <br>
