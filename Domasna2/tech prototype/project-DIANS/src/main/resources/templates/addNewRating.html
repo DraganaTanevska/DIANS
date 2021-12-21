@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form  method="POST", action="/rating/add">
+
+    <label for="rating">Rating:</label>
+    <input type="number" name="rating" id="rating">
+    <input type="hidden" name="id" th:value="${placeType}">
+    <input type="submit" name="submit">
+</form>
+</body>
+</html>

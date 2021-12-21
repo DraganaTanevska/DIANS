@@ -8,15 +8,17 @@
 NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a><a href="/contact"> Contact </a>  <a href="/login"> Login</a>
 <br>
 List of parking.
+
 <br>
 TODO: search, delete, add, rate...
 
 <th:block th:each="parking:${parkings}">
     <div>
-        <div name="id" th:value="${parking.getId()}" th:text="${parking.getName()}"></div>
+        <span name="id" th:value="${parking.getId()}" th:text="${parking.getName()}"></span>
+        <span name="rating" th:value="${parking.getFinalRating()}" th:text="${parking.getFinalRating()}"></span>
         <a th:href="@{'/parking/edit-form/{id}' (id=${parking.getId()})}">Edit NOT IMPLEMENTED</a>
         <a th:href="@{'/parking/delete/{id}' (id=${parking.getId()})}">Delete</a>
-        <a th:href="@{'/parking/add-rate/{id}' (id=${parking.getId()})}">Add Rate for this parking NOT IMPLEMENTED</a>
+        <a th:href="@{'/rating/add-new/{id}' (id=${parking.getId()})}">Add Rate for this parking</a>
 
     </div>
 </th:block>

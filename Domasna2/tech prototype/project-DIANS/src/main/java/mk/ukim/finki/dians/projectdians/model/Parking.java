@@ -9,14 +9,11 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class Parking {
+public class Parking extends PlaceType{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+
     private String lat;
     private String lon;
-    private String name;
     private String website;
     private String addr_street;
     private String opening_hours;
@@ -48,13 +45,6 @@ public class Parking {
         this.lon = lon;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getWebsite() {
         return website;

@@ -12,10 +12,11 @@ List of places.
 TODO: search, delete, add, rate.
 <th:block th:each="place:${places}">
     <div>
-        <div name="id" th:value="${place.getId()}" th:text="${place.getName()}"></div>
+        <span name="id" th:value="${place.getId()}" th:text="${place.getName()}"></span>
+        <span name="rating" th:value="${place.getFinalRating()}" th:text="${place.getFinalRating()}"></span>
             <a th:href="@{'/place/add-form/{id}' (id=${place.getId()})}">Edit NOT IMPLEMENTED</a>
             <a th:href="@{'/place/delete/{id}' (id=${place.getId()})}">Delete</a>
-            <a th:href="@{'/place/add-rate/{id}' (id=${place.getId()})}">Add Rate for this parking NOT IMPLEMENTED</a>
+            <a th:href="@{'/rating/add-new/{id}' (id=${place.getId()})}">Add Rate for this parking NOT IMPLEMENTED</a>
 
     </div>
 </th:block>
