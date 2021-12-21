@@ -15,7 +15,7 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Rating {
 
-    //proba
+    //probaq
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
