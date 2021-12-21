@@ -11,6 +11,7 @@ public class Taxi extends PlaceType {
     private String phoneNumber;
     public Taxi(){}
 
+
     public Taxi(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;

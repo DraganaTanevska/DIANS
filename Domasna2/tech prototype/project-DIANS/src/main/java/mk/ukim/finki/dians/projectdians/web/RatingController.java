@@ -26,6 +26,7 @@ public class RatingController {
     public RatingController(RatingService ratingService, PlaceTypeService placeTypeService) {
         this.ratingService = ratingService;
         this.placeTypeService = placeTypeService;
+
     }
 
     @GetMapping({"/add-new/{id}"})

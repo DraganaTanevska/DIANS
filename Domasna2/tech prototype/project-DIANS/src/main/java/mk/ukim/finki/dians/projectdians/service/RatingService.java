@@ -11,5 +11,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface RatingService {
+
     Optional<Rating> save(Long id, String username, int rating);
 }

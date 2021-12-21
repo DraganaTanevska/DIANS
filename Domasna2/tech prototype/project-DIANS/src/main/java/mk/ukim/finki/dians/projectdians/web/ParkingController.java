@@ -39,6 +39,7 @@ public class ParkingController {
     @GetMapping({"/add-new"})
     public String addNewParkingPage(@RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String name, Model model) {
         return "addNewParking";
+
     }
 
     @PostMapping({"/add"})

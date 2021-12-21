@@ -11,6 +11,7 @@ import javax.persistence.Id;
 @Entity
 public class Parking extends PlaceType{
 
+
     private String lat;
     private String lon;
     private String website;

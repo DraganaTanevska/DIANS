@@ -6,3 +6,4 @@ import org.springframework.stereotype.Service;
 @Service
 public class PlaceTypeServiceImpl implements PlaceTypeService {
 }
+

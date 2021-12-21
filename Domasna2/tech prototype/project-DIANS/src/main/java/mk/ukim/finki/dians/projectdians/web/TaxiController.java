@@ -31,9 +31,10 @@ public class TaxiController {
     }
 
     @GetMapping({"/edit-form/{id}"})
-    public String getEdittaxiPage(@RequestParam(required = false) String error, @PathVariable Long id, Model model) {
+    public String getEditTaxiPage(@RequestParam(required = false) String error, @PathVariable Long id, Model model) {
         model.addAttribute("taxi", this.taxiService.findById(id));
         return "redirect:/taxi/add";
+
     }
 
     @GetMapping({"/add-new"})

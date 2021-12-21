@@ -45,6 +45,7 @@ public class PlaceController {
     public String postNewPlacePage(@RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String name, @RequestParam(required = false) String error, @RequestParam(required = false) String lon, @RequestParam(required = false) String lat, @RequestParam(required = false) String website, @RequestParam(required = false) String adress, @RequestParam(required = false) String openingHours, Model model) {
         this.placeService.savePlace(lat, lon, name, website, adress, openingHours);
         return "redirect:/place/list-all";
+
     }
 
     @GetMapping({"/delete/{id}"})

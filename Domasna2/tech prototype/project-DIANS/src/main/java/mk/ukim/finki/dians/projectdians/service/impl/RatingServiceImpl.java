@@ -26,6 +26,7 @@ public class RatingServiceImpl implements RatingService {
         this.userRepository = userRepository;
         this.placeTypeRepository = placeTypeRepository;
         this.ratingRepository = ratingRepository;
+
     }
 
     public Optional<Rating> save(Long id, String username, int rating) {
