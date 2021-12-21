@@ -8,14 +8,10 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class Place {
+public class Place extends PlaceType {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
     private String lat;
     private String lon;
-    private String name;
     private String website;
     private String addr_street;
     private String opening_hours;
@@ -26,7 +22,7 @@ public class Place {
 
         this.lat = lat;
         this.lon = lon;
-        this.name = name;
+        this.name=name;
         this.website = website;
         this.addr_street = addr_street;
         this.opening_hours = opening_hours;
@@ -48,13 +44,6 @@ public class Place {
         this.lon = lon;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getWebsite() {
         return website;

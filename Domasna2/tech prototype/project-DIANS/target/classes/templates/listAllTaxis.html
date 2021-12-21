@@ -12,11 +12,12 @@ List of taxi.
 TODO: search, delete, add, rate.
 <th:block th:each="taxi:${taxis}">
     <div>
-        <div name="id" th:value="${taxi.getId()}" th:text="${taxi.getName()}">
+        <span name="id" th:value="${taxi.getId()}" th:text="${taxi.getName()}"> </span>
+        <span name="rating" th:value="${taxi.getFinalRating()}" th:text="${taxi.getFinalRating()}"></span>
             <a th:href="@{'/taxi/add-form/{id}' (id=${taxi.getId()})}">Edit NOT IMPLEMENTED</a>
-            <a th:href="@{'/taxi/delete/{id}' (id=${taxi.getId())})}">Delete</a>
-            <a th:href="@{'/taxi/add-rate/{id}' (id=${taxi.getId()})}">Add Rate for this parking NOT IMPLEMENTED</a>
-        </div>
+            <a th:href="@{'/taxi/delete/{id}' (id=${taxi.getId()})}">Delete</a>
+            <a th:href="@{'/rating/add-new/{id}' (id=${taxi.getId()})}">Add Rate for this parking NOT IMPLEMENTED</a>
+
     </div>
 </th:block>
 <br>
