@@ -10,7 +10,7 @@ public abstract class PlaceType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    protected Long id;
+    protected Long Id;
     protected String name;
     protected double finalRating;
     protected int numberOfPeopleRating;
@@ -24,7 +24,7 @@ public abstract class PlaceType {
         this.numberOfPeopleRating = 0;
     }
 
-    public Long getId(){return id;}
+    public Long getId(){return Id;}
     public String getName() {
         return name;
     }

@@ -14,6 +14,7 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Rating {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
