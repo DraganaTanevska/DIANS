@@ -3,7 +3,6 @@ package mk.ukim.finki.dians.projectdians.web;
 import mk.ukim.finki.dians.projectdians.model.Role;
 import mk.ukim.finki.dians.projectdians.service.UserService;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
