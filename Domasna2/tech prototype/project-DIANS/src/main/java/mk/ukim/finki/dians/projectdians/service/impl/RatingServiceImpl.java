@@ -30,7 +30,7 @@ public class RatingServiceImpl implements RatingService {
     }
 
     public Optional<Rating> save(Long id, String username, int rating) {
-        User user = this.userRepository.findByUsername(username);
+        User user = this.userRepository.findByUsername(username).orElse(null);
         PlaceType placeType = this.placeTypeRepository.findById(id).orElse(null);
         double placeTypeRating = placeType.getFinalRating();
         int placeTypeNumberOfPeopleRating = placeType.getNumberOfPeopleRating();

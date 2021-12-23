@@ -45,7 +45,7 @@ public class TaxiController {
     @PostMapping({"/add"})
     public String postNewPlacePage(@RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String phoneNumber, @RequestParam(required = false) String name, Model model) {
         this.taxiService.saveTaxi(name, phoneNumber);
-        return "redirect:/place/list-all";
+        return "redirect:/taxi/list-all";
     }
 
     @GetMapping({"/delete/{id}"})

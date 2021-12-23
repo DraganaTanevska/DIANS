@@ -11,5 +11,6 @@ public interface PlaceService {
     Optional<Place> savePlace(String lat, String lon, String name, String website, String adress, String openingHours);
     void deletePlace(Long id);
     Optional<Place> findById(Long id);
+    //todo za site search query ama nema po sto...
 
 }

@@ -5,8 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a> <a href="/contact"> Contact </a> <a href="/login"> Login</a>
+NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a> <a href="/contact"> Contact </a> <h3>
+    <th:block th:if="${#request.getRemoteUser() != null}" th:text=" 'Welcome ' + ${#request.getRemoteUser()}"></th:block>
+    <div th:if="${#request.getRemoteUser() == null}">
+        <a href="/login"> Login</a>
+    </div>
+    <div th:unless="${#request.getRemoteUser() == null}">
+        <a href="/logout">logout</a>
+    </div>
+</h3>
+
 <br>
+<!--
+<div>
+    Search Taxi
+    <form method="POST" action="/taxi/search">
+        <input type="text" name="search">
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+-->
 List of taxi.
 <br>
 TODO: search, delete, add, rate.
@@ -14,9 +33,11 @@ TODO: search, delete, add, rate.
     <div>
         <span name="id" th:value="${taxi.getId()}" th:text="${taxi.getName()}"> </span>
         <span name="rating" th:value="${taxi.getFinalRating()}" th:text="${taxi.getFinalRating()}"></span>
+        <th:block sec:authorize="hasRole('ROLE_ADMIN')">
             <a th:href="@{'/taxi/add-form/{id}' (id=${taxi.getId()})}">Edit NOT IMPLEMENTED</a>
             <a th:href="@{'/taxi/delete/{id}' (id=${taxi.getId()})}">Delete</a>
-            <a th:href="@{'/rating/add-new/{id}' (id=${taxi.getId()})}">Add Rate for this parking NOT IMPLEMENTED</a>
+        </th:block>
+            <a th:href="@{'/rating/add-new/{id}' (id=${taxi.getId()})}">Add Rate for this Taxi</a>
 
     </div>
 </th:block>

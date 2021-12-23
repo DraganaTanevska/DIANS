@@ -1,5 +1,6 @@
 package mk.ukim.finki.dians.projectdians.web;
 
+import mk.ukim.finki.dians.projectdians.model.Role;
 import mk.ukim.finki.dians.projectdians.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,9 +25,9 @@ public class RegisterController {
         return "register";
     }
     @PostMapping
-    public String toLoginPage(@RequestParam String name,@RequestParam String email,@RequestParam String password,@RequestParam String username,@RequestParam String surname)
+    public String toLoginPage(@RequestParam String name,@RequestParam String email,@RequestParam String password,@RequestParam String username,@RequestParam String surname,@RequestParam Role role)
     {
-        userService.Register(username,name,surname,email,password);
+        userService.Register(username,name,surname,email,password,role);
         return "login";
     }
 }
