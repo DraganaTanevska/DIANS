@@ -17,6 +17,14 @@ public class Taxi extends PlaceType {
         this.phoneNumber = phoneNumber;
     }
 
+    public Taxi(Long id, String name, int numberOfPeopleRating, double finalRating, String phoneNumber) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.Id=id;
+        this.finalRating=finalRating;
+        this.numberOfPeopleRating=numberOfPeopleRating;
+    }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }

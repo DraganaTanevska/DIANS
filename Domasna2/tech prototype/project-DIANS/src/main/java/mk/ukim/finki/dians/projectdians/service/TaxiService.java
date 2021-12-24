@@ -1,5 +1,6 @@
 package mk.ukim.finki.dians.projectdians.service;
 
+import mk.ukim.finki.dians.projectdians.model.Parking;
 import mk.ukim.finki.dians.projectdians.model.Taxi;
 import org.springframework.stereotype.Service;
 
@@ -10,5 +11,7 @@ public interface TaxiService {
     List<Taxi> findAll();
     Optional<Taxi> saveTaxi(String name, String phoneNumber);
     void deleteTaxi(Long id);
-    Optional<Taxi> findById(Long id);
+    Taxi findById(Long id);
+    Optional<Taxi> editTaxi(Long id,  String name, String phoneNumber);
+
 }

@@ -5,6 +5,7 @@
 
 package mk.ukim.finki.dians.projectdians.web;
 
+import mk.ukim.finki.dians.projectdians.model.Taxi;
 import mk.ukim.finki.dians.projectdians.service.TaxiService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,8 +33,9 @@ public class TaxiController {
 
     @GetMapping({"/edit-form/{id}"})
     public String getEditTaxiPage(@RequestParam(required = false) String error, @PathVariable Long id, Model model) {
-        model.addAttribute("taxi", this.taxiService.findById(id));
-        return "redirect:/taxi/add";
+        Taxi taxi=taxiService.findById(id);
+        model.addAttribute("taxi", taxi);
+        return "addNewTaxi";
 
     }
 
@@ -43,7 +45,12 @@ public class TaxiController {
     }
 
     @PostMapping({"/add"})
-    public String postNewPlacePage(@RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String phoneNumber, @RequestParam(required = false) String name, Model model) {
+    public String postNewPlacePage(@RequestParam(required = false) Long id,@RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String phoneNumber, @RequestParam(required = false) String name, Model model) {
+        if(id!=null)
+        {
+            taxiService.editTaxi(id,name,phoneNumber);
+        return "redirect:/taxi/list-all";
+        }
         this.taxiService.saveTaxi(name, phoneNumber);
         return "redirect:/taxi/list-all";
     }

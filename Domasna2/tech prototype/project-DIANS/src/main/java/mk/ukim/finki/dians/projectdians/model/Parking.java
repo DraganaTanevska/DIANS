@@ -19,6 +19,19 @@ public class Parking extends PlaceType{
     private String opening_hours;
 
     public Parking() {}
+
+    public Parking(Long id, String name, int numberOfPeopleRating,double rating,String lat, String lon, String website, String addr_street, String opening_hours) {
+        this.lat = lat;
+        this.Id=id;
+        this.numberOfPeopleRating=numberOfPeopleRating;
+        this.name=name;
+        this.finalRating=rating;
+        this.lon = lon;
+        this.website = website;
+        this.addr_street = addr_street;
+        this.opening_hours = opening_hours;
+    }
+
     public Parking(String lat, String lon, String name, String website, String addr_street, String opening_hours) {
 
         this.lat = lat;
@@ -28,7 +41,6 @@ public class Parking extends PlaceType{
         this.addr_street = addr_street;
         this.opening_hours = opening_hours;
     }
-
     public String getLat() {
         return lat;
     }

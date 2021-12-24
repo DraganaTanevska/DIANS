@@ -29,6 +29,18 @@ public class Place extends PlaceType {
         this.opening_hours = opening_hours;
     }
 
+    public Place(Long id, String name, int numberOfPeopleRating, double finalRating, String lat, String lon, String website, String addr_street, String opening_hours) {
+        this.Id=id;
+        this.finalRating=finalRating;
+        this.numberOfPeopleRating=numberOfPeopleRating;
+        this.lat = lat;
+        this.lon = lon;
+        this.name=name;
+        this.website = website;
+        this.addr_street = addr_street;
+        this.opening_hours = opening_hours;
+    }
+
     public String getLat() {
         return lat;
     }

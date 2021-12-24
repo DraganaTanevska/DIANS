@@ -35,6 +35,7 @@ This is the page to add new taxi.
                required
                placeholder="Enter phone number">
     </div>
+    <input type="hidden" id="id" name="id" th:value="(${taxi} != null ? ${taxi.getId()} : '')">
     <input type="submit" name="submit">
 
 </form>
