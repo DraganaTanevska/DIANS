@@ -52,6 +52,7 @@ This is the page to add new place.
                required
                placeholder="Enter opening hours">
     </div>
+    <input type="hidden" id="id" name="id" th:value="(${place} != null ? ${place.getId()} : '')">
     <input type="submit" name="submit">
 </form>
 <br>

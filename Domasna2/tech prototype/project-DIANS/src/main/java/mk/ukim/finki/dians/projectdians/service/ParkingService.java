@@ -11,7 +11,7 @@ public interface ParkingService {
     List<Parking> findALlParking();
     Optional<Parking> saveParking(String lat, String lon, String name, String website, String adress, String openingHours);
     void deleteParking(Long id);
-    Optional<Parking> findById(Long id);
-
+    Parking findById(Long id);
+    Optional<Parking> editParking(Long id,String lat, String lon, String name, String website, String adress, String openingHours);
 
 }

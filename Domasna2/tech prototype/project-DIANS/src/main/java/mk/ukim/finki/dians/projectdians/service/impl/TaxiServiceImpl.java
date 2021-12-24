@@ -1,6 +1,10 @@
 package mk.ukim.finki.dians.projectdians.service.impl;
 
+import mk.ukim.finki.dians.projectdians.model.Parking;
+import mk.ukim.finki.dians.projectdians.model.Place;
+import mk.ukim.finki.dians.projectdians.model.PlaceType;
 import mk.ukim.finki.dians.projectdians.model.Taxi;
+import mk.ukim.finki.dians.projectdians.repository.PlaceTypeRepository;
 import mk.ukim.finki.dians.projectdians.repository.TaxiRepository;
 import mk.ukim.finki.dians.projectdians.service.TaxiService;
 import org.springframework.stereotype.Service;
@@ -13,8 +17,10 @@ public class TaxiServiceImpl implements TaxiService {
 
     private final TaxiRepository taxiRepository;
 
-    public TaxiServiceImpl(TaxiRepository taxiRepository) {
+    private final PlaceTypeRepository placeTypeRepository;
+    public TaxiServiceImpl(TaxiRepository taxiRepository,PlaceTypeRepository placeTypeRepository) {
         this.taxiRepository = taxiRepository;
+        this.placeTypeRepository=placeTypeRepository;
     }
 
     @Override
@@ -31,11 +37,22 @@ public class TaxiServiceImpl implements TaxiService {
     @Override
     public void deleteTaxi(Long id)
     {
-         taxiRepository.delete(taxiRepository.getById(id));
+         taxiRepository.deleteById(id);
     }
 
     @Override
-    public Optional<Taxi> findById(Long id) {
-        return Optional.of(taxiRepository.getById(id));
+    public Taxi findById(Long id) {
+        Taxi taxi=taxiRepository.findById(id).orElse(null);
+        PlaceType placeType=placeTypeRepository.findById(id).orElse(null);
+        Taxi finalTaxi=new Taxi(id,placeType.getName(),placeType.getNumberOfPeopleRating(),placeType.getFinalRating(),taxi.getPhoneNumber());
+        return finalTaxi;
+    }
+
+    @Override
+    public Optional<Taxi> editTaxi(Long id, String name, String phoneNumber) {
+        Taxi taxi=taxiRepository.findById(id).orElse(null);
+        taxi.setName(name);
+        taxi.setPhoneNumber(phoneNumber);
+        return Optional.of(taxiRepository.save(taxi));
     }
 }

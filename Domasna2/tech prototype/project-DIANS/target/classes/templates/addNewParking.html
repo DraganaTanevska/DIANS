@@ -18,13 +18,15 @@ NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a> <a
 This is the page to add new parking.
 <form method="POST", action="/parking/add">
     <!-- TODO za lokacija edit+insert fali!!!-->
-    <div><label for="name">Name:</label>
+
+
+    <div><label for="name">Website:</label>
         <input type="text"
                name="name"
                id="name"
                th:value="(${parking} != null ? ${parking.getName()} : '')"
                required
-               placeholder="Enter name of the place"></div>
+               placeholder="Enter website"></div>
 
     <div><label for="website">Website:</label>
         <input type="text"
@@ -34,7 +36,7 @@ This is the page to add new parking.
                required
                placeholder="Enter website"></div>
     <div>
-        <label for="adress">Adress:</label>
+        <label for="adress">Address:</label>
         <input type="text"
                name="adress"
                id="adress"
@@ -51,6 +53,7 @@ This is the page to add new parking.
                required
                placeholder="Enter opening hours">
     </div>
+    <input type="hidden" id="id" name="id" th:value="(${parking} != null ? ${parking.getId()} : '')">
     <input type="submit" name="submit">
 </form>
 <br>

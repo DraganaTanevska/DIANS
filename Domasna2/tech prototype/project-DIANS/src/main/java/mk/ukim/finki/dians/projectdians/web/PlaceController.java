@@ -5,6 +5,7 @@
 
 package mk.ukim.finki.dians.projectdians.web;
 
+import mk.ukim.finki.dians.projectdians.model.Place;
 import mk.ukim.finki.dians.projectdians.service.PlaceService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,8 +33,9 @@ public class PlaceController {
 
     @GetMapping({"/edit-form/{id}"})
     public String getEditPlacePage(@RequestParam(required = false) String error, @PathVariable Long id, Model model) {
-        model.addAttribute("place", this.placeService.findById(id));
-        return "redirect:/place/add";
+        Place place=placeService.findById(id);
+        model.addAttribute("place", place);
+        return "addNewPlace";
     }
 
     @GetMapping({"/add-new"})
@@ -42,7 +44,11 @@ public class PlaceController {
     }
 
     @PostMapping({"/add"})
-    public String postNewPlacePage(@RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String name, @RequestParam(required = false) String error, @RequestParam(required = false) String lon, @RequestParam(required = false) String lat, @RequestParam(required = false) String website, @RequestParam(required = false) String adress, @RequestParam(required = false) String openingHours, Model model) {
+    public String postNewPlacePage(@RequestParam(required = false) Long id,@RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String name, @RequestParam(required = false) String error, @RequestParam(required = false) String lon, @RequestParam(required = false) String lat, @RequestParam(required = false) String website, @RequestParam(required = false) String adress, @RequestParam(required = false) String openingHours, Model model) {
+        if(id!=null){
+            this.placeService.editPlace(id,lat,lon,name,website,adress,openingHours);
+            return  "redirect:/place/list-all";
+        }
         this.placeService.savePlace(lat, lon, name, website, adress, openingHours);
         return "redirect:/place/list-all";
 
