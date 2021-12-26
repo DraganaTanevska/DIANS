@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a> <a href="/contact"> Contact </a> <a href="/login"> Login</a>
+<br>
+List of taxi.
+<br>
+TODO: search, delete, add, rate.
+<br>
+<a href="/taxi/add-new">Add new taxi</a><br>
+<a href="/home">Back</a>
+
+<script>
+    function initMap(){
+        var location = {lat: 41.10710300640584,lng:20.809907254037377};
+        var map = new google.maps.Map(document.getElementById("map"),{
+            zoom: 4,
+            center: location
+
+        });
+        var marker = new google.maps.Marker({
+
+            position: location,
+            map: map
+        })
+
+
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp5tKFRkpXvFFmSqLqn1XWoAyg-aOfYwY&callback=initMap"></script>
+</body>
+</html>
