@@ -18,7 +18,6 @@ public class RegisterController {
        // this.authService = authService;
         this.userService = userService;
     }
-
     @GetMapping
     public String getRegisterPage() {
         return "register";

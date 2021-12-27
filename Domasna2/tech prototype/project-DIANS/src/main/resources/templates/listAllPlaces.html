@@ -32,7 +32,7 @@ TODO: search, delete, add, rate.
         <span name="id" th:value="${place.getId()}" th:text="${place.getName()}"></span>
         <span name="rating" th:value="${place.getFinalRating()}" th:text="${place.getFinalRating()}"></span>
         <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-            <a th:href="@{'/place/add-form/{id}' (id=${place.getId()})}">Edit NOT IMPLEMENTED</a>
+            <a th:href="@{'/place/add-form/{id}' (id=${place.getId()})}">Edit</a>
             <a th:href="@{'/place/delete/{id}' (id=${place.getId()})}">Delete</a>
         </th:block>
             <a th:href="@{'/rating/add-new/{id}' (id=${place.getId()})}">Add Rate for Place</a>
@@ -41,6 +41,25 @@ TODO: search, delete, add, rate.
 </th:block>
 <br>
 <a href="/place/add-new">Add new place</a><br>
+<form method="POST" action="/place/sort">
+    <select name="sortType" >
+        <option
+                th:value="Name"
+                th:text="Name">
+        </option>
+        <option  th:value="Rating"
+                 th:text="Rating">
+        </option>
+    </select>
+    <input type="submit" value="Submit">
+</form>
+<div>
+    Search Place
+    <form method="POST" action="/place/search">
+        <input type="text" name="search">
+        <input type="submit" value="Submit">
+    </form>
+</div>
 <a href="/home">Back</a>
 <script>
     function initMap(){

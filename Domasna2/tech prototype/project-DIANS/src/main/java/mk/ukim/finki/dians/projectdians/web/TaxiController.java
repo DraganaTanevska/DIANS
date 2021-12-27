@@ -60,4 +60,24 @@ public class TaxiController {
         this.taxiService.deleteTaxi(id);
         return "redirect:/taxi/list-all";
     }
+
+    @PostMapping("/sort")
+    public String SortTaxi(@RequestParam(required = false) String sortType,Model model)
+    {
+        if(sortType.equals("Rating"))
+        {
+            model.addAttribute("taxis", this.taxiService.sortAllByRating());
+            return "listAllTaxis";
+        }
+        else {
+            model.addAttribute("taxis", this.taxiService.sortAllByName());
+            return "listAllTaxis";
+        }
+    }
+    @PostMapping("/search")
+    public String searchTaxi(@RequestParam(required = false) String search, Model model){
+
+        model.addAttribute("taxis",taxiService.findAllByNameContains(search));
+        return "listAllTaxis";
+    }
 }

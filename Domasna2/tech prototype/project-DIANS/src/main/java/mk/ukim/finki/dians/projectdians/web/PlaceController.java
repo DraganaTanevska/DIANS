@@ -59,4 +59,24 @@ public class PlaceController {
         this.placeService.deletePlace(id);
         return "redirect:/place/list-all";
     }
+
+    @PostMapping("/sort")
+    public String SortPlace(@RequestParam(required = false) String sortType,Model model)
+    {
+        if(sortType.equals("Rating"))
+        {
+            model.addAttribute("places", this.placeService.sortAllByRating());
+            return "listAllPlaces";
+        }
+        else {
+            model.addAttribute("places", this.placeService.sortAllByName());
+            return "listAllPlaces";
+        }
+    }
+    @PostMapping("/search")
+    public String searchPlace(@RequestParam(required = false) String search, Model model){
+
+        model.addAttribute("places",placeService.findAllByNameContains(search));
+        return "listAllPlaces";
+    }
 }

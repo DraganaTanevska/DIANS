@@ -13,5 +13,9 @@ public interface ParkingService {
     void deleteParking(Long id);
     Parking findById(Long id);
     Optional<Parking> editParking(Long id,String lat, String lon, String name, String website, String adress, String openingHours);
+    List<Parking> findAllByNameContains(String name);
+    List<Parking> findAllByRatingAfter(double rating);
+    List<Parking> sortAllByName();
+    List<Parking> sortAllByRating();
 
 }

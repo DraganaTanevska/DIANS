@@ -6,6 +6,7 @@ import mk.ukim.finki.dians.projectdians.model.PlaceType;
 import mk.ukim.finki.dians.projectdians.repository.PlaceRepository;
 import mk.ukim.finki.dians.projectdians.repository.PlaceTypeRepository;
 import mk.ukim.finki.dians.projectdians.service.PlaceService;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -54,6 +55,32 @@ public class PlaceServiceImpl implements PlaceService {
         place.setOpening_hours(openingHours);
         place.setName(name);
         return Optional.of(placeRepository.save(place));
+    }
+
+    @Override
+    public List<Place> findAllByNameContains(String name) {
+        return placeRepository.findAllByNameContains(name);
+    }
+
+    @Override
+    public List<Place> sortAllByName() {
+
+
+        return placeRepository.findAllByOrderByNameAsc();
+       // return placeRepository.findAll(Sort.by(Sort.Direction.ASC,"name"));
+        // return parkingRepository.findAll().stream().sorted((o1, o2)->o1.getName().compareTo(o2.getName())).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Place> findAllByRatingAfter(double rating) {
+        return placeRepository.findAllByFinalRatingAfter(rating);
+    }
+
+    @Override
+    public List<Place> sortAllByRating() {
+        return placeRepository.findAllByOrderByFinalRatingAsc();
+       // return placeRepository.findAll(Sort.by(Sort.Direction.ASC,"website"));
+        //return parkingRepository.findAll().stream().sorted((o1,o2)->Double.compare(o1.getFinalRating(),o2.getFinalRating())).collect(Collectors.toList());
     }
 
 }

@@ -55,4 +55,30 @@ public class TaxiServiceImpl implements TaxiService {
         taxi.setPhoneNumber(phoneNumber);
         return Optional.of(taxiRepository.save(taxi));
     }
+
+    @Override
+    public List<Taxi> findAllByNameContains(String name) {
+        return taxiRepository.findAllByNameContains(name);
+    }
+
+    @Override
+    public List<Taxi> sortAllByName() {
+
+
+        return taxiRepository.findAllByOrderByNameAsc();
+        //return taxiRepository.findAll(Sort.by(Sort.Direction.ASC,"name"));
+        // return parkingRepository.findAll().stream().sorted((o1, o2)->o1.getName().compareTo(o2.getName())).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Taxi> findAllByRatingAfter(double rating) {
+        return taxiRepository.findAllByFinalRatingAfter(rating);
+    }
+
+    @Override
+    public List<Taxi> sortAllByRating() {
+        return taxiRepository.findAllByOrderByFinalRatingAsc();
+        //return taxiRepository.findAll(Sort.by(Sort.Direction.ASC,"website"));
+        //return parkingRepository.findAll().stream().sorted((o1,o2)->Double.compare(o1.getFinalRating(),o2.getFinalRating())).collect(Collectors.toList());
+    }
 }

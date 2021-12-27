@@ -67,4 +67,25 @@ public class ParkingController {
         return "redirect:/parking/list-all";
     }
 
+    @PostMapping("/sort")
+    public String SortParking(@RequestParam(required = false) String sortType,Model model)
+    {
+        if(sortType.equals("Rating"))
+        {
+            model.addAttribute("parkings", this.parkingService.sortAllByRating());
+            return "listAllParkings";
+        }
+        else {
+            model.addAttribute("parkings", this.parkingService.sortAllByName());
+            return "listAllParkings";
+        }
+    }
+    @PostMapping("/search")
+    public String searchParking(@RequestParam(required = false) String search, Model model){
+
+        model.addAttribute("parkings",parkingService.findAllByNameContains(search));
+        return "listAllParkings";
+    }
+
+
 }

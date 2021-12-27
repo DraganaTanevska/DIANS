@@ -15,4 +15,9 @@ public interface PlaceService {
     //todo za site search query ama nema po sto...
     Optional<Place> editPlace(Long id, String lat, String lon, String name, String website, String adress, String openingHours);
 
+    List<Place> findAllByNameContains(String name);
+    List<Place> findAllByRatingAfter(double rating);
+    List<Place> sortAllByName();
+    List<Place> sortAllByRating();
+
 }

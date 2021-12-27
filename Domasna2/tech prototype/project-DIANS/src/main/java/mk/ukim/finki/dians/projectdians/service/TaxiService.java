@@ -14,4 +14,9 @@ public interface TaxiService {
     Taxi findById(Long id);
     Optional<Taxi> editTaxi(Long id,  String name, String phoneNumber);
 
+    List<Taxi> findAllByNameContains(String name);
+    List<Taxi> findAllByRatingAfter(double rating);
+    List<Taxi> sortAllByName();
+    List<Taxi> sortAllByRating();
+
 }
