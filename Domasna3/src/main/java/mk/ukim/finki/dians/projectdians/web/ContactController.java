@@ -13,4 +13,9 @@ public class ContactController {
     public String getContactPage(Model model){
         return("contact");
     }
+
+    @GetMapping("/contact")
+    public String getContacttPage(Model model){
+        return "home";
+    }
 }

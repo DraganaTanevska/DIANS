@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e076b8f1-bc82-4301-842f-88afa8b24970" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/architecture/Arhitektura.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/architecture/implementaciski_dijagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/architecture/izvrsen_dijagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/architecture/koncepciski_dijagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/aboutUs_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/contact_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/home_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/login_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/parking_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/place_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/register_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/mockups/taxi_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/project-DIANS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/ProjectDiansApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/model/Parking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/model/Place.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/model/Taxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/repository/AuthRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/repository/ParkingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/repository/PlaceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/repository/TaxiRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/service/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/service/ParkingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/service/PlaceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/service/TaxiService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/AuthServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/ParkingServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/PlaceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/TaxiServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/web/AboutUsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/web/ContactController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/web/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/web/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/web/LogoutController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/web/ParkingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/web/PlaceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/web/RegisterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/java/mk/ukim/finki/dians/projectdians/web/TaxiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/aboutUs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/addNewParking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/addNewPlace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/addNewTaxi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/listAllParkings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/listAllPlaces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/listAllTaxis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/main/resources/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/src/test/java/mk/ukim/finki/dians/projectdians/ProjectDiansApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/ProjectDiansApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/model/Parking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/model/Place.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/model/Taxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/repository/AuthRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/repository/ParkingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/repository/PlaceRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/repository/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/repository/TaxiRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/service/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/service/ParkingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/service/PlaceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/service/TaxiService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/service/impl/AuthServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/service/impl/ParkingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/service/impl/PlaceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/service/impl/TaxiServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/web/AboutUsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/web/ContactController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/web/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/web/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/web/LogoutController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/web/ParkingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/web/PlaceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/web/RegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/mk/ukim/finki/dians/projectdians/web/TaxiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/aboutUs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/addNewParking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/addNewPlace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/addNewRating.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/addNewTaxi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/listAllParkings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/listAllPlaces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/listAllTaxis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/classes/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/project-DIANS/target/test-classes/mk/ukim/finki/dians/projectdians/ProjectDiansApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Domasna2/tech prototype/techPrototype_video.mkv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-DIANS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project-DIANS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/PlaceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/PlaceType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/AuthRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/AuthRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/ParkingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/ParkingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/ParkingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/ParkingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/ParkingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/ParkingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/ParkingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/ParkingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listAllParkings.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listAllParkings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/listAllParkings.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/listAllParkings.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="22qIwIvj3Gsu4w1MjASIhI8Sduz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ProjectDiansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="project-DIANS" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.dians.projectdians.ProjectDiansApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e076b8f1-bc82-4301-842f-88afa8b24970" name="Changes" comment="" />
+      <created>1640558928438</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640558928438</updated>
+      <workItem from="1640558930565" duration="1283000" />
+      <workItem from="1640560750229" duration="2232000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../.." />
+    </ignored-roots>
+  </component>
+</project>
