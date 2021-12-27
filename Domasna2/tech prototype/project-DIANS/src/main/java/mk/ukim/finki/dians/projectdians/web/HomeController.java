@@ -19,7 +19,7 @@ public class HomeController {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().GET()
                 .header("accept","application/json")
-                .uri(URI.create("https://maps.googleapis.com/maps/api/distancematrix/json?origins=41.1150384,41.1150384&destinations=41.1150384,41.1150384&key=AIzaSyD6KknbJQDT4mxXyb676yAzDsN5AMLAfrU"))
+                .uri(URI.create("https://maps.googleapis.com/maps/api/distancematrix/json?origins=41.1150384,41.1150384&destinations=41.1150384,41.1150384&key=YOUR_API_KEY"))
                 .build();
        HttpResponse<String> response = client.send(request,HttpResponse.BodyHandlers.ofString());
         StringBuilder builder = new StringBuilder();
