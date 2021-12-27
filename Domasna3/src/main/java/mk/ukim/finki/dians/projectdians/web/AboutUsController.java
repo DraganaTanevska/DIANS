@@ -12,6 +12,6 @@ public class AboutUsController {
     public String getAboutUsPage(Model model) {
         model.addAttribute("bodyContent", "aboutUs");
         return "aboutUs";
-        //tuka bese master-template
+        
     }
 }
