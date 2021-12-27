@@ -6,6 +6,7 @@
 package mk.ukim.finki.dians.projectdians.web;
 
 import mk.ukim.finki.dians.projectdians.model.Parking;
+import mk.ukim.finki.dians.projectdians.model.Place;
 import mk.ukim.finki.dians.projectdians.service.ParkingService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -87,5 +89,31 @@ public class ParkingController {
         return "listAllParkings";
     }
 
+    @PostMapping("/distance")
+    public String distance(@RequestParam(required = false)Long idPlace,@RequestParam(required = false)String latitude,@RequestParam(required = false)String longitude,Model model) throws IOException, InterruptedException {
+        Parking place = parkingService.findById(idPlace);
+        String DestinationLat = place.getLat();
+        String DestinationLon = place.getLon();
+        String latOrigin = latitude;
+        String lonOrigin = longitude;
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder().GET()
+                .header("accept","application/json")
+                .uri(URI.create("https://maps.googleapis.com/maps/api/distancematrix/json?origins="+latOrigin+","+longitude+"&destinations="+DestinationLat+","+DestinationLon+"&key=AIzaSyD6KknbJQDT4mxXyb676yAzDsN5AMLAfrU"))
+                .build();
+        HttpResponse<String> response = client.send(request,HttpResponse.BodyHandlers.ofString());
+        StringBuilder builder = new StringBuilder();
+        builder.append(response.body());
+        String distance=builder.toString().split("\n")[8];
+        String duration=builder.toString().split("\n")[12];
+        String destination=builder.toString().split("\n")[1];
+        String origin=builder.toString().split("\n")[2];
+        model.addAttribute("distance",distance);
+        model.addAttribute("origin",origin);
+        model.addAttribute("duration",duration);
+        model.addAttribute("destination",destination);
+        model.addAttribute("places", this.parkingService.findALlParking());
+        return "listAllPlaces";
+    }
 
 }

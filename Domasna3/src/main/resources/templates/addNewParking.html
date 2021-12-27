@@ -53,6 +53,27 @@ This is the page to add new parking.
                required
                placeholder="Enter opening hours">
     </div>
+
+    <div>
+        <label for="lat">Latitude</label>
+        <input type="text"
+               name="lat"
+               id="lat"
+               th:value="(${parking} != null ? ${parking.getLat()} : '')"
+               required
+               placeholder="Enter Latitude">
+    </div>
+
+    <div>
+        <label for="lon">Longitude</label>
+        <input type="text"
+               name="lon"
+               id="lon"
+               th:value="(${parking} != null ? ${parking.getLon()} : '')"
+               required
+               placeholder="Enter Longitude">
+    </div>
+
     <input type="hidden" id="id" name="id" th:value="(${parking} != null ? ${parking.getId()} : '')">
     <input type="submit" name="submit">
 </form>

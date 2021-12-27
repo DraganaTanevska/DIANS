@@ -16,18 +16,6 @@ import java.net.http.HttpResponse;
 public class HomeController {
     @GetMapping
     public String getHomePage(Model model) throws IOException, InterruptedException {
-//        HttpClient client = HttpClient.newHttpClient();
-//        HttpRequest request = HttpRequest.newBuilder().GET()
-//                .header("accept","application/json")
-//                .uri(URI.create("https://maps.googleapis.com/maps/api/distancematrix/json?origins=41.1150384,41.1150384&destinations=41.1150384,41.1150384&key=YOUR_API_KEY"))
-//                .build();
-//       HttpResponse<String> response = client.send(request,HttpResponse.BodyHandlers.ofString());
-//        StringBuilder builder = new StringBuilder();
-//        builder.append(response.body());
-//        String distance=builder.toString().split("\n")[8];
-//        String duration=builder.toString().split("\n")[12];
-//        String destination=builder.toString().split("\n")[1];
-//        String origin=builder.toString().split("\n")[2];
         model.addAttribute("bodyContent", "home");
         return "home";
         //tuka bese master-template

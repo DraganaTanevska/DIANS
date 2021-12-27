@@ -44,13 +44,32 @@ This is the page to add new place.
                placeholder="Enter phone number">
     </div>
     <div>
-        <label for="openingHours">Opening hours:</label>
+        <label for="lat">Latitude</label>
+        <input type="text"
+               name="lat"
+               id="lat"
+               th:value="(${place} != null ? ${place.getLat()} : '')"
+               required
+               placeholder="Enter Latitude">
+    </div>
+    <div>
+        <label for="lon">Longitude</label>
+        <input type="text"
+               name="lon"
+               id="lon"
+               th:value="(${place} != null ? ${place.getLon()} : '')"
+               required
+               placeholder="Enter Longitude">
+    </div>
+
+    <div>
+        <label for="openingHours">openingHours</label>
         <input type="text"
                name="openingHours"
                id="openingHours"
-               th:value="(${place} != null ? ${place.getOpening_hours()} : '')"
+               th:value="(${place} != null ? ${place.getLon()} : '')"
                required
-               placeholder="Enter opening hours">
+               placeholder="Enter openingHours">
     </div>
     <input type="hidden" id="id" name="id" th:value="(${place} != null ? ${place.getId()} : '')">
     <input type="submit" name="submit">

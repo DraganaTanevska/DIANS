@@ -24,6 +24,10 @@ NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a><a 
     </form>
 </div>
 -->
+<p>Click the button to get your coordinates.</p>
+
+<button id="tryit" onclick="getLocation()">Try It</button>
+<br>
 List of parking.
 <br>
 TODO: search, delete, add, rate...
@@ -37,9 +41,14 @@ TODO: search, delete, add, rate...
         <a th:href="@{'/parking/delete/{id}' (id=${parking.getId()})}">Delete</a>
         </th:block>
         <a th:href="@{'/rating/add-new/{id}' (id=${parking.getId()})}">Add Rate for this parking</a>
-
+        <input id="Radio" onclick="Prefrli(this)" type="radio" name="idRadio" th:value="${parking.getId()}" th:text="Select">
     </div>
 </th:block>
+<form action="/parking/distance" method="POST">
+    <div id="forma"></div>
+    <div id="demo"></div>
+    <input type="submit" value="To calculate distance please select from the places above" id="kopce" disabled="disabled">
+</form>
 <br>
 <a href="/parking/add-new">Add new parking</a>
 <form method="POST" action="/parking/sort">
@@ -63,24 +72,55 @@ TODO: search, delete, add, rate...
 </div>
 <br>
 <a href="/home">Back</a>
-<div id="map"></div>
+<div>
+    Distance:
+    <th:block th:text="${distance}">
+
+    </th:block>
+</div>
+<div>
+    Duration:
+    <th:block th:text="${duration}">
+
+    </th:block>
+</div>
+<div>
+    Origin:
+    <th:block th:text="${origin}">
+
+    </th:block>
+</div>
+<div>
+    Destination:
+    <th:block th:text="${destination}">
+
+    </th:block>
+</div>
 <script>
-    function initMap(){
-        var location = {lat: 41.10710300640584,lng:20.809907254037377};
-        var map = new google.maps.Map(document.getElementById("map"),{
-            zoom: 4,
-            center: location
+    function Prefrli(id){
+        x =document.getElementById("forma")
+        y=document.getElementById("Radio")
+        yy=id.value
+        kopce=document.getElementById("kopce")
+        kopce.disabled=false
+        kopce.value="Calculate"
+        console.log(id.value)
+        x.innerHTML = "<input type='hidden' name='idPlace' value="+yy+">"
+    }
 
-        });
-        var marker = new google.maps.Marker({
+    var xxx = document.getElementById("demo");
 
-            position: location,
-            map: map
-        })
-
-
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            xxx.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    function showPosition(position) {
+        xxx.innerHTML = "<input type='hidden' name='latitude' value="+ position.coords.latitude +">"+
+            "<br><input type='hidden' name='longitude' value="+ position.coords.longitude+">"
     }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp5tKFRkpXvFFmSqLqn1XWoAyg-aOfYwY&callback=initMap"></script>
 </body>
 </html>

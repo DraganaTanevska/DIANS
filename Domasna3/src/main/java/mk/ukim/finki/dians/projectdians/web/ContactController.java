@@ -13,4 +13,5 @@ public class ContactController {
     public String getContactPage(Model model){
         return("contact");
     }
+
 }
