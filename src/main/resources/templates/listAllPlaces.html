@@ -92,6 +92,7 @@ List of places.
                     <td><a th:href="@{'/place/delete/{id}' (id=${place.getId()})}">Delete</a></td>
                 </th:block>
                 <td><a th:href="@{'/rating/add-new/{id}' (id=${place.getId()})}">Add Rate for Place</a></td>
+               <td> <input id="Radio" onclick="Prefrli(this)" type="radio" name="idRadio" th:value="${place.getId()}" th:text="Select"></td>
             </tr>
         </div>
     </th:block>

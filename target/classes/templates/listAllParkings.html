@@ -92,11 +92,11 @@ List of parking.
                 <td><span name="id" th:value="${parking.getId()}" th:text="${parking.getName()}"></span></td>
                 <td><span name="rating" th:value="${parking.getFinalRating()}" th:text="${parking.getFinalRating()}"></span></td>
                 <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-                    <td></td><a th:href="@{'/parking/edit-form/{id}' (id=${parking.getId()})}">Edit</a></td>
+                    <td><a th:href="@{'/parking/edit-form/{id}' (id=${parking.getId()})}">Edit</a></td>
                     <td><a th:href="@{'/parking/delete/{id}' (id=${parking.getId()})}">Delete</a></td>
                 </th:block>
                 <td><a th:href="@{'/rating/add-new/{id}' (id=${parking.getId()})}">Add Rate for this parking</a></td>
-
+                <td><input id="Radio" onclick="Prefrli(this)" type="radio" name="idRadio" th:value="${parking.getId()}" th:text="Select"></td>
             </div>
         </tr>
     </th:block>

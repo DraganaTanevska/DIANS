@@ -31,7 +31,7 @@ public class PlaceController {
      * @param search   - search parameter, can be null. IN CASE IT IS NULL sortType is checked.
      * @param sortType - sorting parameter, can be null. IN CASE IT IS NULL all taxis are shown.
      * @param model
-     * @return listAllParkings.html
+     * @return listAllPlaces.html
      */
     @GetMapping({"/list-all"})
     public String getPlacesPage(@RequestParam(required = false) String search,
@@ -52,6 +52,11 @@ public class PlaceController {
         return "listAllPlaces";
     }
 
+    /**
+     *
+     * @param id - Finding the specific Place to be edited
+     * @return addNewPlace.html
+     */
     @GetMapping({"/edit-form/{id}"})
     public String getEditPlacePage(@PathVariable Long id,
                                    Model model) {
@@ -65,6 +70,17 @@ public class PlaceController {
         return "addNewPlace";
     }
 
+    /**
+     *
+     * @param id - if called from edit it will find the specific Place with given id to be changed or not,otherwise its null
+     * @param name - if called from edit it will find the specific Place with given name to be changed or not,otherwise it will add new Place with new name
+     * @param lon - if called from edit it will find the specific Place with given lon to be changed or not,otherwise it will add new Place with new longitude
+     * @param lat - if called from edit it will find the specific Place with given lat to be changed or not,otherwise it will add new Place with new latitude
+     * @param website - if called from edit it will find the specific Place with given website to be changed or not,otherwise it will add new Place with new website
+     * @param adress - if called from edit it will find the specific Place with given adress to be changed or not,otherwise it will add new Place with new adress
+     * @param openingHours - if called from edit it will find the specific Place with given openingHours to be changed or not,otherwise it will add new Place with new Opening hours
+     * @return listAllPlaces.html
+     */
     @PostMapping({"/add"})
     public String postNewPlacePage(@RequestParam(required = false) Long id,
                                    @RequestParam(required = false) String name,
@@ -72,8 +88,8 @@ public class PlaceController {
                                    @RequestParam(required = false) String lat,
                                    @RequestParam(required = false) String website,
                                    @RequestParam(required = false) String adress,
-                                   @RequestParam(required = false) String openingHours,
-                                   Model model) {
+                                   @RequestParam(required = false) String openingHours
+                                  ) {
         if (id != null) {
             this.placeService.editPlace(id, lat, lon, name, website, adress, openingHours);
         }
@@ -82,6 +98,11 @@ public class PlaceController {
 
     }
 
+    /**
+     *
+     * @param id - Finding the specific Place to be deleted
+     * @return listAllPlaces.html
+     */
     @GetMapping({"/delete/{id}"})
     public String deletePlace(@PathVariable Long id) {
         this.placeService.deletePlace(id);

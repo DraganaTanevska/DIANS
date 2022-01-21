@@ -46,6 +46,11 @@ public class TaxiController {
         return "listAllTaxis";
     }
 
+    /**
+     *
+     * @param id - Finding the specific Taxis to be edited
+     * @return addNewTaxi.html
+     */
     @GetMapping({"/edit-form/{id}"})
     public String getEditTaxiPage(@PathVariable Long id,
                                   Model model) {
@@ -59,7 +64,13 @@ public class TaxiController {
     public String addNewTaxiPage() {
         return "addNewTaxi";
     }
-
+    /**
+     *
+     * @param id - if called from edit it will find the specific Taxi with given id to be changed or not,otherwise its null
+     * @param phoneNumber -  if called from edit it will find the specific Taxi with given name to be changed or not,otherwise it will add new Taxi with new phone number
+     * @param name - if called from edit it will find the specific Taxi with given name to be changed or not,otherwise it will add new Taxi with new name
+     * @return listAllTaxis.html
+     */
     @PostMapping({"/add"})
     public String postNewPlacePage(@RequestParam(required = false) Long id,
                                    @RequestParam(required = false) String phoneNumber,
@@ -72,7 +83,11 @@ public class TaxiController {
         this.taxiService.saveTaxi(name, phoneNumber);
         return "redirect:/taxi/list-all";
     }
-
+    /**
+     *
+     * @param id - Finding the specific Taxi to be deleted
+     * @return listAllTaxis.html
+     */
     @GetMapping({"/delete/{id}"})
     public String deleteParking(@PathVariable Long id) {
         this.taxiService.deleteTaxi(id);
