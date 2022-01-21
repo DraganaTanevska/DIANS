@@ -1,10 +1,8 @@
 package mk.ukim.finki.dians.projectdians.model;
+
 import lombok.Data;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Data
 @Entity
@@ -17,25 +15,26 @@ public class Place extends PlaceType {
     private String addr_street;
     private String opening_hours;
 
-    public Place(){}
+    public Place() {
+    }
 
     public Place(String lat, String lon, String name, String website, String addr_street, String opening_hours) {
 
         this.lat = lat;
         this.lon = lon;
-        this.name=name;
+        this.name = name;
         this.website = website;
         this.addr_street = addr_street;
         this.opening_hours = opening_hours;
     }
 
     public Place(Long id, String name, int numberOfPeopleRating, double finalRating, String lat, String lon, String website, String addr_street, String opening_hours) {
-        this.Id=id;
-        this.finalRating=finalRating;
-        this.numberOfPeopleRating=numberOfPeopleRating;
+        this.Id = id;
+        this.finalRating = finalRating;
+        this.numberOfPeopleRating = numberOfPeopleRating;
         this.lat = lat;
         this.lon = lon;
-        this.name=name;
+        this.name = name;
         this.website = website;
         this.addr_street = addr_street;
         this.opening_hours = opening_hours;

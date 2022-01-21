@@ -11,21 +11,22 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @RequestMapping("/register")
 public class RegisterController {
-   // private final AuthService authService;
+    // private final AuthService authService;
     private final UserService userService;
 
     public RegisterController(UserService userService) {
-       // this.authService = authService;
+        // this.authService = authService;
         this.userService = userService;
     }
+
     @GetMapping
     public String getRegisterPage() {
         return "register";
     }
+
     @PostMapping
-    public String toLoginPage(@RequestParam String name,@RequestParam String email,@RequestParam String password,@RequestParam String username,@RequestParam String surname,@RequestParam Role role)
-    {
-        userService.Register(username,name,surname,email,password,role);
+    public String toLoginPage(@RequestParam String name, @RequestParam String email, @RequestParam String password, @RequestParam String username, @RequestParam String surname, @RequestParam Role role) {
+        userService.Register(username, name, surname, email, password, role);
         return "login";
     }
 }

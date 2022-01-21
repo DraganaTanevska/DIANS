@@ -12,6 +12,7 @@ public class ProjectDiansApplication {
     public static void main(String[] args) {
         SpringApplication.run(ProjectDiansApplication.class, args);
     }
+
     @Bean
     PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder(10);

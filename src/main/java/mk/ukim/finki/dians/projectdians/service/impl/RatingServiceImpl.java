@@ -5,8 +5,6 @@
 
 package mk.ukim.finki.dians.projectdians.service.impl;
 
-import java.time.LocalDateTime;
-import java.util.Optional;
 import mk.ukim.finki.dians.projectdians.model.PlaceType;
 import mk.ukim.finki.dians.projectdians.model.Rating;
 import mk.ukim.finki.dians.projectdians.model.User;
@@ -15,6 +13,9 @@ import mk.ukim.finki.dians.projectdians.repository.RatingRepository;
 import mk.ukim.finki.dians.projectdians.repository.UserRepository;
 import mk.ukim.finki.dians.projectdians.service.RatingService;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
+import java.util.Optional;
 
 @Service
 public class RatingServiceImpl implements RatingService {
@@ -34,12 +35,12 @@ public class RatingServiceImpl implements RatingService {
         PlaceType placeType = this.placeTypeRepository.findById(id).orElse(null);
         double placeTypeRating = placeType.getFinalRating();
         int placeTypeNumberOfPeopleRating = placeType.getNumberOfPeopleRating();
-        placeTypeRating = (placeTypeRating * (double)placeTypeNumberOfPeopleRating + (double)rating) / (double)(placeTypeNumberOfPeopleRating + 1);
+        placeTypeRating = (placeTypeRating * (double) placeTypeNumberOfPeopleRating + (double) rating) / (double) (placeTypeNumberOfPeopleRating + 1);
         ++placeTypeNumberOfPeopleRating;
         placeType.setFinalRating(placeTypeRating);
         placeType.setNumberOfPeopleRating(placeTypeNumberOfPeopleRating);
         LocalDateTime dateTime = LocalDateTime.now();
         Rating ratingObject = new Rating(placeType, user, rating, dateTime);
-        return Optional.of((Rating)this.ratingRepository.save(ratingObject));
+        return Optional.of(this.ratingRepository.save(ratingObject));
     }
 }

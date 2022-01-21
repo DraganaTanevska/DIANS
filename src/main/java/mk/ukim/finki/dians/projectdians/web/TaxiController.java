@@ -9,12 +9,7 @@ import mk.ukim.finki.dians.projectdians.model.Taxi;
 import mk.ukim.finki.dians.projectdians.service.TaxiService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping({"/taxi"})
@@ -25,59 +20,63 @@ public class TaxiController {
         this.taxiService = taxiService;
     }
 
+    /**
+     * @param search   - search parameter, can be null. IN CASE IT IS NULL sortType is checked.
+     * @param sortType - sorting parameter, can be null. IN CASE IT IS NULL all taxis are shown.
+     * @param model
+     * @return listAllTaxis.html
+     */
     @GetMapping({"/list-all"})
-    public String getTaxisPage(@RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String name, Model model) {
-        model.addAttribute("taxis", this.taxiService.findAll());
+    public String getTaxisPage(@RequestParam(required = false) String sortType,
+                               @RequestParam(required = false) String search,
+                               Model model) {
+
+        if (search != null) {
+            model.addAttribute("taxis", taxiService.findAllByNameContains(search));
+
+        } else if (sortType != null) {
+            if (sortType.equals("Rating")) {
+                model.addAttribute("taxis", this.taxiService.sortAllByRating());
+            } else if (sortType.equals("Name")) {
+                model.addAttribute("taxis", this.taxiService.sortAllByName());
+            }
+        } else {
+            model.addAttribute("taxis", this.taxiService.findAll());
+        }
         return "listAllTaxis";
     }
 
     @GetMapping({"/edit-form/{id}"})
-    public String getEditTaxiPage(@RequestParam(required = false) String error, @PathVariable Long id, Model model) {
-        Taxi taxi=taxiService.findById(id);
+    public String getEditTaxiPage(@PathVariable Long id,
+                                  Model model) {
+        Taxi taxi = taxiService.findById(id);
         model.addAttribute("taxi", taxi);
         return "addNewTaxi";
 
     }
 
     @GetMapping({"/add-new"})
-    public String addNewTaxiPage(@RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String name, Model model) {
+    public String addNewTaxiPage() {
         return "addNewTaxi";
     }
 
     @PostMapping({"/add"})
-    public String postNewPlacePage(@RequestParam(required = false) Long id,@RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String phoneNumber, @RequestParam(required = false) String name, Model model) {
-        if(id!=null)
-        {
-            taxiService.editTaxi(id,name,phoneNumber);
-        return "redirect:/taxi/list-all";
+    public String postNewPlacePage(@RequestParam(required = false) Long id,
+                                   @RequestParam(required = false) String phoneNumber,
+                                   @RequestParam(required = false) String name,
+                                   Model model) {
+        if (id != null) {
+            taxiService.editTaxi(id, name, phoneNumber);
+            return "redirect:/taxi/list-all";
         }
         this.taxiService.saveTaxi(name, phoneNumber);
         return "redirect:/taxi/list-all";
     }
 
     @GetMapping({"/delete/{id}"})
-    public String deleteParking(@PathVariable Long id, @RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String name, Model model) {
+    public String deleteParking(@PathVariable Long id) {
         this.taxiService.deleteTaxi(id);
         return "redirect:/taxi/list-all";
     }
 
-    @PostMapping("/sort")
-    public String SortTaxi(@RequestParam(required = false) String sortType,Model model)
-    {
-        if(sortType.equals("Rating"))
-        {
-            model.addAttribute("taxis", this.taxiService.sortAllByRating());
-            return "listAllTaxis";
-        }
-        else {
-            model.addAttribute("taxis", this.taxiService.sortAllByName());
-            return "listAllTaxis";
-        }
-    }
-    @PostMapping("/search")
-    public String searchTaxi(@RequestParam(required = false) String search, Model model){
-
-        model.addAttribute("taxis",taxiService.findAllByNameContains(search));
-        return "listAllTaxis";
-    }
 }

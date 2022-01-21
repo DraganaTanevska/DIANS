@@ -6,6 +6,8 @@
 </head>
 <body>
 NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a> <a href="/contact"> Contact </a> <h3>
+
+
     <th:block th:if="${#request.getRemoteUser() != null}" th:text=" 'Welcome ' + ${#request.getRemoteUser()}"></th:block>
     <div th:if="${#request.getRemoteUser() == null}">
         <a href="/login"> Login</a>
@@ -16,34 +18,13 @@ NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a> <a
 </h3>
 
 <br>
-<!--
-<div>
-    Search Taxi
-    <form method="POST" action="/taxi/search">
-        <input type="text" name="search">
-        <input type="submit" value="Submit">
-    </form>
-
-</div>
--->
 List of taxi.
 <br>
-TODO: search, delete, add, rate.
-<th:block th:each="taxi:${taxis}">
-    <div>
-        <span name="id" th:value="${taxi.getId()}" th:text="${taxi.getName()}"> </span>
-        <span name="rating" th:value="${taxi.getFinalRating()}" th:text="${taxi.getFinalRating()}"></span>
-        <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-            <a th:href="@{'/taxi/add-form/{id}' (id=${taxi.getId()})}">Edit</a>
-            <a th:href="@{'/taxi/delete/{id}' (id=${taxi.getId()})}">Delete</a>
-        </th:block>
-            <a th:href="@{'/rating/add-new/{id}' (id=${taxi.getId()})}">Add Rate for this Taxi</a>
-
-    </div>
+<th:block sec:authorize="hasRole('ROLE_ADMIN')">
+    <a href="/taxi/add-new">Add new taxi</a>
 </th:block>
 <br>
-<a href="/taxi/add-new">Add new taxi</a><br>
-<form method="POST" action="/taxi/sort">
+<form method="GET" action="/taxi/list-all">
     <select name="sortType" >
         <option
                 th:value="Name"
@@ -55,33 +36,40 @@ TODO: search, delete, add, rate.
     </select>
     <input type="submit" value="Submit">
 </form>
+
 <div>
     Search Taxi
-    <form method="POST" action="/taxi/search">
+    <form method="GET" action="/taxi/list-all">
         <input type="text" name="search">
         <input type="submit" value="Submit">
     </form>
 
 </div>
 <a href="/home">Back</a>
-
-<script>
-    function initMap(){
-        var location = {lat: 41.10710300640584,lng:20.809907254037377};
-        var map = new google.maps.Map(document.getElementById("map"),{
-            zoom: 4,
-            center: location
-
-        });
-        var marker = new google.maps.Marker({
-
-            position: location,
-            map: map
-        })
-
-
-    }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp5tKFRkpXvFFmSqLqn1XWoAyg-aOfYwY&callback=initMap"></script>
+<table>
+    <thead>
+    <th>
+        Name
+    </th>
+    <th>
+        Rating
+    </th>
+    </thead>
+    <th:block th:each="taxi:${taxis}">
+        <tr>
+            <div>
+                <td><span name="id" th:value="${taxi.getId()}" th:text="${taxi.getName()}"> </span></td>
+                <td><span name="rating" th:value="${taxi.getFinalRating()}" th:text="${taxi.getFinalRating()}"></span></td>
+                <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                    <td><a th:href="@{'/taxi/edit-form/{id}' (id=${taxi.getId()})}">Edit</a></td>
+                    <td> <a th:href="@{'/taxi/delete/{id}' (id=${taxi.getId()})}">Delete</a></td>
+                </th:block>
+                <td> <a th:href="@{'/rating/add-new/{id}' (id=${taxi.getId()})}">Add Rating</a></td>
+                <td>Get distance</td>
+            </div>
+        </tr>
+    </th:block>
+</table>
+<br>
 </body>
 </html>

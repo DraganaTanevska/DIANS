@@ -5,17 +5,13 @@
 
 package mk.ukim.finki.dians.projectdians.web;
 
-import javax.servlet.http.HttpServletRequest;
 import mk.ukim.finki.dians.projectdians.service.PlaceTypeService;
 import mk.ukim.finki.dians.projectdians.service.RatingService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping({"/rating"})
@@ -30,7 +26,7 @@ public class RatingController {
     }
 
     @GetMapping({"/add-new/{id}"})
-    public String addNewPlacePage(@PathVariable Long id, @RequestHeader(name = "User-Agent",required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String name, Model model) {
+    public String addNewPlacePage(@PathVariable Long id, @RequestHeader(name = "User-Agent", required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String name, Model model) {
         model.addAttribute("placeType", id);
         return "addNewRating";
     }

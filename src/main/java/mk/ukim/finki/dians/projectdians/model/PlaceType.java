@@ -1,13 +1,11 @@
 package mk.ukim.finki.dians.projectdians.model;
 
-import lombok.Data;
-
 import javax.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class PlaceType {
-//
+    //
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long Id;
@@ -15,7 +13,8 @@ public abstract class PlaceType {
     protected double finalRating;
     protected int numberOfPeopleRating;
 
-    public PlaceType() {}
+    public PlaceType() {
+    }
 
     public PlaceType(String name) {
 
@@ -24,7 +23,10 @@ public abstract class PlaceType {
         this.numberOfPeopleRating = 0;
     }
 
-    public Long getId(){return Id;}
+    public Long getId() {
+        return Id;
+    }
+
     public String getName() {
         return name;
     }

@@ -5,9 +5,10 @@
 
 package mk.ukim.finki.dians.projectdians.service;
 
-import java.util.Optional;
 import mk.ukim.finki.dians.projectdians.model.Rating;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public interface RatingService {

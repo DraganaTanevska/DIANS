@@ -20,12 +20,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         this.passwordEncoder = passwordEncoder;
         this.authenticationProvider = authenticationProvider;
     }
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/", "/home", "/assets/**", "/register", "/login", "/api/**","/aboutUs","/contact").permitAll()
+                .antMatchers("/", "/home", "/assets/**", "/register", "/login", "/api/**", "/aboutUs", "/contact").permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest()
                 .authenticated()

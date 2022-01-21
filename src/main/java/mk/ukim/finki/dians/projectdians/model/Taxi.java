@@ -2,14 +2,16 @@ package mk.ukim.finki.dians.projectdians.model;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
 
 @Data
 @Entity
 public class Taxi extends PlaceType {
 
     private String phoneNumber;
-    public Taxi(){}
+
+    public Taxi() {
+    }
 
 
     public Taxi(String name, String phoneNumber) {
@@ -20,9 +22,9 @@ public class Taxi extends PlaceType {
     public Taxi(Long id, String name, int numberOfPeopleRating, double finalRating, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
-        this.Id=id;
-        this.finalRating=finalRating;
-        this.numberOfPeopleRating=numberOfPeopleRating;
+        this.Id = id;
+        this.finalRating = finalRating;
+        this.numberOfPeopleRating = numberOfPeopleRating;
     }
 
     public String getPhoneNumber() {
