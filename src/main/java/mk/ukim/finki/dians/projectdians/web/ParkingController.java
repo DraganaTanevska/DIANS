@@ -140,8 +140,8 @@ public class ParkingController {
         model.addAttribute("origin", origin);
         model.addAttribute("duration", duration);
         model.addAttribute("destination", destination);
-        model.addAttribute("places", this.parkingService.findALlParking());
-        return "listAllPlaces";
+        model.addAttribute("parkings", this.parkingService.findALlParking());
+        return "listAllParkings";
     }
 
 }
