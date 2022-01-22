@@ -21,12 +21,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         this.authenticationProvider = authenticationProvider;
     }
 
+
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/", "/home", "/assets/**", "/register", "/login", "/api/**", "/aboutUs", "/contact").permitAll()
+                .antMatchers("/", "/img/**","/js/**", "/css/**","/home", "/assets/**", "/register", "/login", "/api/**", "/aboutUs", "/contact").permitAll()
                 .antMatchers("/admin/**","/parking/delete/**","/place/delete/**","/taxi/delete/**","/taxi/edit/**","/place/edit/**","/parking/edit/**","/place/add-new","/parking/add-new","/taxi/add-new","/taxi/add","/parking/add","/place/add").hasRole("ADMIN")
                 .anyRequest()
                 .authenticated()

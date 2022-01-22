@@ -2,178 +2,9 @@
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/cssList.css}">
+    <title>Add new place</title>
 </head>
-<style>
-    a {
-        -webkit-appearance: button;
-        -moz-appearance: button;
-        appearance: button;
-        text-decoration: none;
-        color: initial;
-    }
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
-    .button-three{
-        text-align: center;
-        cursor: pointer;
-        font-size:24px;
-        margin: 0 0 0 100px;
-    }
-    .button-three {
-        position: relative;
-        background-color: #f39c12;
-        border: none;
-        padding: 20px;
-        width: 200px;
-        text-align: center;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
-        text-decoration: none;
-        overflow: hidden;
-    }
-
-    .button-three:hover{
-        background:#fff;
-        box-shadow:0px 2px 10px 5px #97B1BF;
-        color:#000;
-    }
-
-    .button-three:after {
-        content: "";
-        background: #f1c40f;
-        display: block;
-        position: absolute;
-        padding-top: 300%;
-        padding-left: 350%;
-        margin-left: -20px !important;
-        margin-top: -120%;
-        opacity: 0;
-        transition: all 0.8s
-    }
-
-    .button-three:active:after {
-        padding: 0;
-        margin: 0;
-        opacity: 1;
-        transition: 0s;
-    }
-
-    #button-2 {
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-    }
-
-    #button-2 a {
-        position: relative;
-        transition: all .35s ease-Out;
-    }
-
-    #slide {
-        width: 100%;
-        height: 100%;
-        left: -200px;
-        background: #BFC0C0;
-        position: absolute;
-        transition: all .35s ease-Out;
-        bottom: 0;
-    }
-
-    #button-2:hover #slide {
-        left: 0;
-    }
-
-    #button-2:hover a {
-        color: #2D3142;
-    }
-
-    #button-2 {
-        display: inline-flex;
-        height: 40px;
-        width: 150px;
-        border: 2px solid #BFC0C0;
-        margin: 20px 20px 20px 20px;
-        color: #BFC0C0;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: .8em;
-        letter-spacing: 1.5px;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    #button-2 a {
-        color: #BFC0C0;
-        text-decoration: none;
-        letter-spacing: 1px;
-    }
-    #navigation{
-        background: #3b4146;
-    }
-    #body{
-        background: #2a2b2c;
-        height: 885px;
-    }
-    .form-control,
-    .border-line {
-        background-color: #5f5f5f;
-        background-image: none;
-        border: 1px solid #424242;
-        border-radius: 1px;
-        color: inherit;
-        display: block;
-        padding: 6px 12px;
-        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-        width: 110%;
-
-    }
-    .form-control:focus,
-    .border-line:focus {
-        border-color: #FFEB3B;
-        background-color: #616161;
-        color: #e6e6e6;
-    }
-    .form-control,
-    .form-control:focus {
-        box-shadow: none;
-    }
-
-    .form-control::-webkit-input-placeholder { color: #BDBDBD; }
-    #forma{
-        top: 210px;
-        position: relative;
-        left: 650px;
-        margin-right: 1519px;
-    }
-    #register-form{
-
-        top: 300px;
-        margin-right: 650px;
-        left: 650px;
-        top: 300px;
-
-        position: relative;
-    }
-    .form-button {
-        background-color: rgba(255, 235, 59, 0.24);
-        border-color: rgba(255, 235, 59, 0.24);
-        color: #f39c12;
-        width: 116.5%;
-    }
-    .form-button:hover,
-    .form-button:focus,
-    .form-button:active,
-    .form-button.active,
-    .form-button:active:focus,
-    .form-button:active:hover,
-    .form-button.active:hover,
-    .form-button.active:focus {
-        background-color: rgba(255, 235, 59, 0.473);
-        border-color: rgba(255, 235, 59, 0.473);
-        color: #e6e6e6;
-    }
-</style>
 <body style="margin: 0;">
 <div id="navigation"><div class="button" id="button-2">
     <div id="slide"></div><a href="/home"> Home </a> </div> <div class="button" id="button-2"> <div id="slide"></div> <a href="/aboutUs"> About Us </a></div> <div class="button" id="button-2">
@@ -195,57 +26,64 @@
 This is the page to add new place.
 <form method="POST", action="/place/add">
 <div id="forma">
-    <div><label for="name">Name:</label>
+    <div class="input">
+        <label for="name">Name:</label>
         <input type="text"
                name="name"
                id="name"
+               class="form-control"
                th:value="(${place} != null ? ${place.getName()} : '')"
                required
-               placeholder="Enter name of the place" class="form-control"></div>
+               placeholder="Enter name of the place"></div>
 
     <div><label for="website">Website:</label>
         <input type="text"
                name="website"
                id="website"
+               class="form-control"
                th:value="(${place} != null ? ${place.getWebsite()} : '')"
                required
-               placeholder="Enter website" class="form-control"></div>
+               placeholder="Enter website" ></div>
     <div>
         <label for="adress">Adress:</label>
         <input type="text"
                name="adress"
                id="adress"
+               class="form-control"
                th:value="(${place} != null ? ${place.getAddr_street()} : '')"
                required
-               placeholder="Enter phone number" class="form-control">
+               placeholder="Enter phone number">
     </div>
     <div>
         <label for="lat">Latitude</label>
         <input type="text"
                name="lat"
                id="lat"
+               class="form-control"
                th:value="(${place} != null ? ${place.getLat()} : '')"
                required
-               placeholder="Enter Latitude" class="form-control">
+               placeholder="Enter Latitude">
     </div>
     <div>
         <label for="lon">Longitude</label>
         <input type="text"
                name="lon"
                id="lon"
+               class="form-control"
                th:value="(${place} != null ? ${place.getLon()} : '')"
                required
-               placeholder="Enter Longitude" class="form-control">
+               placeholder="Enter Longitude">
     </div>
 
     <div>
-        <label for="openingHours">openingHours</label>
+        <label for="openingHours">Opening Hours:</label>
         <input type="text"
                name="openingHours"
                id="openingHours"
+               class="form-control"
                th:value="(${place} != null ? ${place.getLon()} : '')"
                required
-               placeholder="Enter openingHours" class="form-control">
+               placeholder="Enter openingHours">
     </div>
     <input type="hidden" id="id" name="id" th:value="(${place} != null ? ${place.getId()} : '')">
     <input type="submit" name="submit" class="form-button">

@@ -2,167 +2,11 @@
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/cssList.css}">
+    <title>Places page</title>
 </head>
-<style>
-    a {
-        -webkit-appearance: button;
-        -moz-appearance: button;
-        appearance: button;
-        text-decoration: none;
-        color: initial;
-    }
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
-    .button-three{
-        text-align: center;
-        cursor: pointer;
-        font-size:24px;
-        margin: 0 0 0 100px;
-    }
-    .button-three {
-        position: relative;
-        background-color: #f39c12;
-        border: none;
-        padding: 20px;
-        width: 200px;
-        text-align: center;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
-        text-decoration: none;
-        overflow: hidden;
-    }
 
-    .button-three:hover{
-        background:#fff;
-        box-shadow:0px 2px 10px 5px #97B1BF;
-        color:#000;
-    }
-
-    .button-three:after {
-        content: "";
-        background: #f1c40f;
-        display: block;
-        position: absolute;
-        padding-top: 300%;
-        padding-left: 350%;
-        margin-left: -20px !important;
-        margin-top: -120%;
-        opacity: 0;
-        transition: all 0.8s
-    }
-
-    .button-three:active:after {
-        padding: 0;
-        margin: 0;
-        opacity: 1;
-        transition: 0s;
-    }
-
-    #button-2 {
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-    }
-
-    #button-2 a {
-        position: relative;
-        transition: all .35s ease-Out;
-    }
-
-    #slide {
-        width: 100%;
-        height: 100%;
-        left: -200px;
-        background: #BFC0C0;
-        position: absolute;
-        transition: all .35s ease-Out;
-        bottom: 0;
-    }
-
-    #button-2:hover #slide {
-        left: 0;
-    }
-
-    #button-2:hover a {
-        color: #2D3142;
-    }
-
-    #button-2 {
-        display: inline-flex;
-        height: 40px;
-        width: 150px;
-        border: 2px solid #BFC0C0;
-        margin: 20px 20px 20px 20px;
-        color: #BFC0C0;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: .8em;
-        letter-spacing: 1.5px;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    #button-2 a {
-        color: #BFC0C0;
-        text-decoration: none;
-        letter-spacing: 1px;
-    }
-    #navigation{
-        background: #3b4146;
-    }
-    #body{
-        background: #2a2b2c;
-        height: 100%;
-    }
-    .form-button {
-        background-color: rgba(255, 235, 59, 0.24);
-        border-color: rgba(255, 235, 59, 0.24);
-        color: #f39c12;
-        width: 5.5%;
-    }
-    .form-button:hover,
-    .form-button:focus,
-    .form-button:active,
-    .form-button.active,
-    .form-button:active:focus,
-    .form-button:active:hover,
-    .form-button.active:hover,
-    .form-button.active:focus {
-        background-color: rgba(255, 235, 59, 0.473);
-        border-color: rgba(255, 235, 59, 0.473);
-        color: #e6e6e6;
-    }
-    #kopce{
-        width: 19.5%;
-    }
-    .form-control,
-    .border-line {
-        background-color: #5f5f5f;
-        background-image: none;
-        border: 1px solid #424242;
-        border-radius: 1px;
-        color: inherit;
-        display: block;
-        padding: 6px 12px;
-        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-        width: 10%;
-
-    }
-    .form-control:focus,
-    .border-line:focus {
-        border-color: #FFEB3B;
-        background-color: #616161;
-        color: #e6e6e6;
-    }
-    .form-control,
-    .form-control:focus {
-        box-shadow: none;
-    }
-
-    .form-control::-webkit-input-placeholder { color: #BDBDBD; }
-</style>
-<body style="margin: 0;">
+<body>
 <div id="navigation"><div class="button" id="button-2">
     <div id="slide"></div><a href="/home"> Home </a> </div> <div class="button" id="button-2"> <div id="slide"></div> <a href="/aboutUs"> About Us </a></div> <div class="button" id="button-2">
     <div id="slide"></div><a href="/contact"> Contact </a> </div>
@@ -181,17 +25,12 @@
 </div>
 
 <div id="body">
-    List of places
-<p>Click the button to get your coordinates.</p>
-
-<button id="tryit" onclick="getLocation()" class="form-button">Try It</button>
 
 <form action="/place/distance" method="POST">
     <div id="forma"></div>
     <div id="demo"></div>
     <input type="submit" value="To calculate distance please select from the places below" id="kopce" disabled="disabled" class="form-button">
 </form>
-
 <div>
     Distance:
     <th:block th:text="${distance}">
@@ -216,81 +55,70 @@
 
     </th:block>
 </div>
-List of places.
+    <br>
 <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-    <a href="/place/add-new">Add new place</a><br>
+    <a class="EDR" href="/place/add-new">Add new place</a><br>
 </th:block>
-<form method="GET" action="/place/list-all">
-    <select name="sortType" >
-        <option
-                th:value="Name"
-                th:text="Name">
-        </option>
-        <option  th:value="Rating"
-                 th:text="Rating">
-        </option>
-    </select>
-    <input type="submit" value="Submit" class="form-button">
-</form>
-<div>
-    Search Place
-    <form method="GET" action="/place/list-all">
-        <input type="text" name="search" class="form-control">
-        <input type="submit" value="Submit" class="form-button">
-    </form>
-</div>
-<a href="/home">Back</a>
+
+    <br>
+<a class="EDR" href="/home">Back</a>
+    <br>
+    <br>
+    <br>
 <table>
-    <thead>
-    <th>
-        Name
-    </th>
-    <th>
-        Rating
-    </th>
-    </thead>
+    <tr>
+    <td>
+        <div>
+        <form method="GET" action="/place/list-all">
+            <input style="width: 100px; margin-left: 20px" type="text" name="search" class="form-control">
+            <input style="width: 100px; margin-left: 20px" type="submit" value="Search" class="form-button">
+        </form>
+    </div>
+    </td>
+        <td></td>
+    <td>
+    <div>
+        <form method="GET" action="/place/list-all">
+            <select name="sortType" >
+                <option
+                        th:value="Name"
+                        th:text="Name">
+                </option>
+                <option  th:value="Rating"
+                         th:text="Rating">
+                </option>
+            </select>
+            <input style="width: 100px" type="submit" value="Sort" class="form-button">
+        </form>
+    </div>
+    </td>
+    </tr>
     <th:block th:each="place:${places}">
         <div>
             <tr>
-                <td><span name="id" th:value="${place.getId()}" th:text="${place.getName()}"></span></td>
-                <td><span name="rating" th:value="${place.getFinalRating()}" th:text="${place.getFinalRating()}"></span></td>
+                <td>
+                    <div name="id" th:value="${place.getId()}" th:text="${place.getName()}"></div>
+                    <div name="rating" th:value="${place.getFinalRating()}" th:text="${place.getFinalRating()}"></div>
+                </td>
+                <td>
                 <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-                    <td><a th:href="@{'/place/edit-form/{id}' (id=${place.getId()})}">Edit</a></td>
-                    <td><a th:href="@{'/place/delete/{id}' (id=${place.getId()})}">Delete</a></td>
+                    <a class="EDR" th:href="@{'/place/edit-form/{id}' (id=${place.getId()})}">Edit</a>
+                    <br>
+                    <a class="EDR" th:href="@{'/place/delete/{id}' (id=${place.getId()})}">Delete</a>
+                    <br>
+                    <a class="EDR" th:href="@{'/rating/add-new/{id}' (id=${place.getId()})}">Rate me!</a>
                 </th:block>
-                <td><a th:href="@{'/rating/add-new/{id}' (id=${place.getId()})}">Add Rate for Place</a></td>
-               <td> <input class="option-input radio" id="Radio" onclick="Prefrli(this)" type="radio" name="idRadio" th:value="${place.getId()}" th:text="Select"></td>
+                </td>
+               <td>
+                   <p>Click the button to get distance </p>
+                   <button id="tryit" onclick="getLocation(this)" name="idRadio" th:value="${place.getId()}" class="form-button">Try It</button>
+               </td>
             </tr>
         </div>
     </th:block>
 </table>
 <br>
-<script>
-    function Prefrli(id){
-        x =document.getElementById("forma")
-        y=document.getElementById("Radio")
-        yy=id.value
-        kopce=document.getElementById("kopce")
-        kopce.disabled=false
-        kopce.value="Calculate"
-        console.log(id.value)
-        x.innerHTML = "<input type='hidden' name='idPlace' value="+yy+">"
-    }
-
-    var xxx = document.getElementById("demo");
-
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            xxx.innerHTML = "Geolocation is not supported by this browser.";
-        }
-    }
-    function showPosition(position) {
-        xxx.innerHTML = "<input type='hidden' name='latitude' value="+ position.coords.latitude +">"+
-            "<br><input type='hidden' name='longitude' value="+ position.coords.longitude+">"
-    }
-</script>
+    <script src="/js/getDistance.js"></script>
 </div>
 </body>
 </html>

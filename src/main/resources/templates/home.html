@@ -2,120 +2,8 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/cssList.css}">
     <title>Title</title>
-
-    <style>
-        a {
-            -webkit-appearance: button;
-            -moz-appearance: button;
-            appearance: button;
-            text-decoration: none;
-            color: initial;
-        }
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
-        .button-three{
-            text-align: center;
-            cursor: pointer;
-            font-size:24px;
-            margin: 0 0 0 100px;
-        }
-        .button-three {
-            position: relative;
-            background-color: #f39c12;
-            border: none;
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-            -webkit-transition-duration: 0.4s; /* Safari */
-            transition-duration: 0.4s;
-            text-decoration: none;
-            overflow: hidden;
-        }
-
-        .button-three:hover{
-            background:#fff;
-            box-shadow:0px 2px 10px 5px #97B1BF;
-            color:#000;
-        }
-
-        .button-three:after {
-            content: "";
-            background: #f1c40f;
-            display: block;
-            position: absolute;
-            padding-top: 300%;
-            padding-left: 350%;
-            margin-left: -20px !important;
-            margin-top: -120%;
-            opacity: 0;
-            transition: all 0.8s
-        }
-
-        .button-three:active:after {
-            padding: 0;
-            margin: 0;
-            opacity: 1;
-            transition: 0s;
-        }
-
-        #button-2 {
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        #button-2 a {
-            position: relative;
-            transition: all .35s ease-Out;
-        }
-
-        #slide {
-            width: 100%;
-            height: 100%;
-            left: -200px;
-            background: #BFC0C0;
-            position: absolute;
-            transition: all .35s ease-Out;
-            bottom: 0;
-        }
-
-        #button-2:hover #slide {
-            left: 0;
-        }
-
-        #button-2:hover a {
-            color: #2D3142;
-        }
-
-        #button-2 {
-            display: inline-flex;
-            height: 40px;
-            width: 150px;
-            border: 2px solid #BFC0C0;
-            margin: 20px 20px 20px 20px;
-            color: #BFC0C0;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: .8em;
-            letter-spacing: 1.5px;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        #button-2 a {
-            color: #BFC0C0;
-            text-decoration: none;
-            letter-spacing: 1px;
-        }
-        #navigation{
-            background: #3b4146;
-        }
-        #body{
-            background: #2a2b2c;
-            height: 885px;
-        }
-    </style>
 </head>
 <body style="margin: auto; height: auto;width: auto">
 <div id="navigation"><div class="button" id="button-2">
@@ -135,19 +23,17 @@
     </div>
 </div>
 <div id="body">
-<div class="sub-main">
-<a href="/place/list-all" class="button-three" style="bottom: -385px;
-    left: 200px;">Place</a>
-</div>
-<br>
-<div  class="sub-main">
-<a href="/parking/list-all" class="button-three" style="    bottom: -296px;
-    left: 1200px;">Parking</a>
-</div>
-<br>
-<div class="sub-main">
-<a href="/taxi/list-all" class="button-three" style="    bottom: -207px;
-    left: 671px;">Taxi</a>
+<div class="sub-main" style="margin-top: 200px">
+    <a href="/place/list-all" style="width: 400px"  >
+<img src="https://www.nicepng.com/png/detail/303-3039748_restaurant-icons-chef-icon-free-vector.png" class="button-three" style="width: 300px; height: 200px; display: inline-block"></img>
+    </a>
+    <a  href="/parking/list-all" style="width: 400px">
+<img src="https://media.istockphoto.com/vectors/parking-zone-design-vector-id671539858?k=20&m=671539858&s=612x612&w=0&h=aihS3c-bk8HOIQr0D0aPaDbMVuVKR5qSBdGQdoMUOuc=" class="button-three" style="width: 300px; height: 200px;"></img></a>
+
+    <a href="/taxi/list-all" style="width: 400px">
+        <img src="https://media.istockphoto.com/vectors/taxi-icon-vector-id1083280034?k=20&m=1083280034&s=612x612&w=0&h=_TZmLgWF8nfFjI0HI2X3GoGmC9YAwe320iA1JnxN1_s="  class="button-three" style="width: 300px; height: 200px;">
+    </a>
+    </img>
 </div>
 <br>
 </div>
