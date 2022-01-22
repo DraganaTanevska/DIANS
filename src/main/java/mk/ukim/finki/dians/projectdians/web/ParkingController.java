@@ -52,6 +52,11 @@ public class ParkingController {
         return "listAllParkings";
     }
 
+    /**
+     *
+     * @param id - Finding the specific Parking to be edited
+     * @return addNewPakring.html
+     */
     @GetMapping({"/edit-form/{id}"})
     public String getEditParkingPage(@PathVariable Long id,
                                      Model model) {
@@ -65,9 +70,19 @@ public class ParkingController {
         return "addNewParking";
 
     }
-
+    /**
+     *
+     * @param id - if called from edit it will find the specific Parking with given id to be changed or not,otherwise its null
+     * @param name - if called from edit it will find the specific Parking with given name to be changed or not,otherwise it will add new Parking with new name
+     * @param lon - if called from edit it will find the specific Parking with given lon to be changed or not,otherwise it will add new Parking with new longitude
+     * @param lat - if called from edit it will find the specific Parking with given lat to be changed or not,otherwise it will add new Parking with new latitude
+     * @param website - if called from edit it will find the specific Parking with given website to be changed or not,otherwise it will add new Parking with new website
+     * @param adress - if called from edit it will find the specific Parking with given adress to be changed or not,otherwise it will add new Parking with new adress
+     * @param openingHours - if called from edit it will find the specific Parking with given openingHours to be changed or not,otherwise it will add new Parking with new opening hours
+     * @return listAllParkings.html
+     */
     @PostMapping({"/add"})
-    public String postNewParkingPage(@RequestParam(required = false) Long id, @RequestHeader(name = "User-Agent", required = false) String user, @RequestParam(required = false) String website, @RequestParam(required = false) String error, @RequestParam(required = false) String lon, @RequestParam(required = false) String lat, @RequestParam(required = false) String name, @RequestParam(required = false) String adress, @RequestParam(required = false) String openingHours, Model model) {
+    public String postNewParkingPage(@RequestParam(required = false) Long id, @RequestHeader(name = "User-Agent", required = false) String user, @RequestParam(required = false) String website, @RequestParam(required = false) String error, @RequestParam(required = false) String lon, @RequestParam(required = false) String lat, @RequestParam(required = false) String name, @RequestParam(required = false) String adress, @RequestParam(required = false) String openingHours) {
 
         if (id != null) {
             parkingService.editParking(id, lat, lon, name, website, adress, openingHours);
@@ -77,8 +92,13 @@ public class ParkingController {
         return "redirect:/parking/list-all";
     }
 
+    /**
+     *
+     * @param id - Finding the specific Pakring to be deleted
+     * @return listAllParkings.html
+     */
     @GetMapping({"/delete/{id}"})
-    public String deleteParking(@PathVariable Long id, @RequestHeader(name = "User-Agent", required = false) String user, @RequestParam(required = false) String error, @RequestParam(required = false) String name, Model model) {
+    public String deleteParking(@PathVariable Long id) {
         this.parkingService.deleteParking(id);
         return "redirect:/parking/list-all";
     }
@@ -89,7 +109,7 @@ public class ParkingController {
      * @param idParking - the place to get distance to.
      * @param latitude  - user latitude.
      * @param longitude - user longitude.
-     * @return listAllPlaces.html
+     * @return listAllParkings.html
      * @throws IOException
      * @throws InterruptedException
      */
@@ -120,8 +140,8 @@ public class ParkingController {
         model.addAttribute("origin", origin);
         model.addAttribute("duration", duration);
         model.addAttribute("destination", destination);
-        model.addAttribute("places", this.parkingService.findALlParking());
-        return "listAllPlaces";
+        model.addAttribute("parkings", this.parkingService.findALlParking());
+        return "listAllParkings";
     }
 
 }

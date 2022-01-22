@@ -4,29 +4,206 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a> <a href="/contact"> Contact </a> <h3>
-    <th:block th:if="${#request.getRemoteUser() != null}" th:text=" 'Welcome ' + ${#request.getRemoteUser()}"></th:block>
-    <div th:if="${#request.getRemoteUser() == null}">
-        <a href="/login"> Login</a>
+<style>
+    a {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        text-decoration: none;
+        color: initial;
+    }
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
+    .button-three{
+        text-align: center;
+        cursor: pointer;
+        font-size:24px;
+        margin: 0 0 0 100px;
+    }
+    .button-three {
+        position: relative;
+        background-color: #f39c12;
+        border: none;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+    }
+
+    .button-three:hover{
+        background:#fff;
+        box-shadow:0px 2px 10px 5px #97B1BF;
+        color:#000;
+    }
+
+    .button-three:after {
+        content: "";
+        background: #f1c40f;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
+
+    .button-three:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s;
+    }
+
+    #button-2 {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    #button-2 a {
+        position: relative;
+        transition: all .35s ease-Out;
+    }
+
+    #slide {
+        width: 100%;
+        height: 100%;
+        left: -200px;
+        background: #BFC0C0;
+        position: absolute;
+        transition: all .35s ease-Out;
+        bottom: 0;
+    }
+
+    #button-2:hover #slide {
+        left: 0;
+    }
+
+    #button-2:hover a {
+        color: #2D3142;
+    }
+
+    #button-2 {
+        display: inline-flex;
+        height: 40px;
+        width: 150px;
+        border: 2px solid #BFC0C0;
+        margin: 20px 20px 20px 20px;
+        color: #BFC0C0;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: .8em;
+        letter-spacing: 1.5px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #button-2 a {
+        color: #BFC0C0;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+    #navigation{
+        background: #3b4146;
+    }
+    #body{
+        background: #2a2b2c;
+        height: 885px;
+    }
+    .form-control,
+    .border-line {
+        background-color: #5f5f5f;
+        background-image: none;
+        border: 1px solid #424242;
+        border-radius: 1px;
+        color: inherit;
+        display: block;
+        padding: 6px 12px;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+        width: 110%;
+
+    }
+    .form-control:focus,
+    .border-line:focus {
+        border-color: #FFEB3B;
+        background-color: #616161;
+        color: #e6e6e6;
+    }
+    .form-control,
+    .form-control:focus {
+        box-shadow: none;
+    }
+
+    .form-control::-webkit-input-placeholder { color: #BDBDBD; }
+    #forma{
+        top: 210px;
+        position: relative;
+        left: 650px;
+        margin-right: 1519px;
+    }
+    #register-form{
+
+        top: 300px;
+        margin-right: 650px;
+        left: 650px;
+        top: 300px;
+
+        position: relative;
+    }
+    .form-button {
+        background-color: rgba(255, 235, 59, 0.24);
+        border-color: rgba(255, 235, 59, 0.24);
+        color: #f39c12;
+        width: 116.5%;
+    }
+    .form-button:hover,
+    .form-button:focus,
+    .form-button:active,
+    .form-button.active,
+    .form-button:active:focus,
+    .form-button:active:hover,
+    .form-button.active:hover,
+    .form-button.active:focus {
+        background-color: rgba(255, 235, 59, 0.473);
+        border-color: rgba(255, 235, 59, 0.473);
+        color: #e6e6e6;
+    }
+</style>
+<body style="margin: 0;">
+<div id="navigation"><div class="button" id="button-2">
+    <div id="slide"></div><a href="/home"> Home </a> </div> <div class="button" id="button-2"> <div id="slide"></div> <a href="/aboutUs"> About Us </a></div> <div class="button" id="button-2">
+    <div id="slide"></div><a href="/contact"> Contact </a> </div>
+    <th:block th:if="${#request.getRemoteUser() != null}" >
+        <div style="display: inline-block;color: #BFC0C0" th:text=" 'Welcome ' + ${#request.getRemoteUser()}"></div>
+    </th:block>
+    <div class="button" id="button-2" th:if="${#request.getRemoteUser() == null}">
+        <div id="slide" th:if="${#request.getRemoteUser() == null}">
+        </div>
+        <a href="/login">Login</a>
     </div>
-    <div th:unless="${#request.getRemoteUser() == null}">
+    <div class="button" id="button-2" th:unless="${#request.getRemoteUser() == null}">
+        <div id="slide" th:unless="${#request.getRemoteUser() == null}"></div>
         <a href="/logout">logout</a>
     </div>
-</h3>
-<br>
+</div>
+<div id="body">
 This is the page to add new parking.
 <form method="POST", action="/parking/add">
     <!-- TODO za lokacija edit+insert fali!!!-->
 
-
-    <div><label for="name">Website:</label>
+<div id="forma">
+    <div><label for="name">Name:</label>
         <input type="text"
                name="name"
                id="name"
                th:value="(${parking} != null ? ${parking.getName()} : '')"
                required
-               placeholder="Enter website"></div>
+               placeholder="Enter website" class="form-control"></div>
 
     <div><label for="website">Website:</label>
         <input type="text"
@@ -34,7 +211,7 @@ This is the page to add new parking.
                id="website"
                th:value="(${parking} != null ? ${parking.getWebsite()} : '')"
                required
-               placeholder="Enter website"></div>
+               placeholder="Enter website" class="form-control"></div>
     <div>
         <label for="adress">Address:</label>
         <input type="text"
@@ -42,7 +219,7 @@ This is the page to add new parking.
                id="adress"
                th:value="(${parking} != null ? ${parking.getAddr_street()} : '')"
                required
-               placeholder="Enter phone number">
+               placeholder="Enter phone number" class="form-control">
     </div>
     <div>
         <label for="openingHours">Opening hours:</label>
@@ -51,7 +228,7 @@ This is the page to add new parking.
                id="openingHours"
                th:value="(${parking} != null ? ${parking.getOpening_hours()} : '')"
                required
-               placeholder="Enter opening hours">
+               placeholder="Enter opening hours" class="form-control">
     </div>
 
     <div>
@@ -61,7 +238,7 @@ This is the page to add new parking.
                id="lat"
                th:value="(${parking} != null ? ${parking.getLat()} : '')"
                required
-               placeholder="Enter Latitude">
+               placeholder="Enter Latitude" class="form-control">
     </div>
 
     <div>
@@ -71,14 +248,15 @@ This is the page to add new parking.
                id="lon"
                th:value="(${parking} != null ? ${parking.getLon()} : '')"
                required
-               placeholder="Enter Longitude">
+               placeholder="Enter Longitude" class="form-control">
     </div>
 
     <input type="hidden" id="id" name="id" th:value="(${parking} != null ? ${parking.getId()} : '')">
-    <input type="submit" name="submit">
+    <input type="submit" name="submit" class="form-button">
+</div>
 </form>
 <br>
 <a href="/parking/list-all">Back</a>
-<br>
+</div>
 </body>
 </html>

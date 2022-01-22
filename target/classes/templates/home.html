@@ -57,35 +57,99 @@
             opacity: 1;
             transition: 0s;
         }
+
+        #button-2 {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        #button-2 a {
+            position: relative;
+            transition: all .35s ease-Out;
+        }
+
+        #slide {
+            width: 100%;
+            height: 100%;
+            left: -200px;
+            background: #BFC0C0;
+            position: absolute;
+            transition: all .35s ease-Out;
+            bottom: 0;
+        }
+
+        #button-2:hover #slide {
+            left: 0;
+        }
+
+        #button-2:hover a {
+            color: #2D3142;
+        }
+
+        #button-2 {
+            display: inline-flex;
+            height: 40px;
+            width: 150px;
+            border: 2px solid #BFC0C0;
+            margin: 20px 20px 20px 20px;
+            color: #BFC0C0;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: .8em;
+            letter-spacing: 1.5px;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #button-2 a {
+            color: #BFC0C0;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        #navigation{
+            background: #3b4146;
+        }
+        #body{
+            background: #2a2b2c;
+            height: 885px;
+        }
     </style>
 </head>
-<body>
-NAVIGATION_MENU: <a href="/home"> Home </a> <a href="/aboutUs"> About Us </a> <a href="/contact"> Contact </a>
-<h3>
-    <th:block th:if="${#request.getRemoteUser() != null}" th:text=" 'Welcome ' + ${#request.getRemoteUser()}"></th:block>
-<div th:if="${#request.getRemoteUser() == null}">
-    <a href="/login"> Login</a>
+<body style="margin: auto; height: auto;width: auto">
+<div id="navigation"><div class="button" id="button-2">
+    <div id="slide"></div><a href="/home"> Home </a> </div> <div class="button" id="button-2"> <div id="slide"></div> <a href="/aboutUs"> About Us </a></div> <div class="button" id="button-2">
+    <div id="slide"></div><a href="/contact"> Contact </a> </div>
+    <th:block th:if="${#request.getRemoteUser() != null}" >
+        <div style="display: inline-block;color: #BFC0C0" th:text=" 'Welcome ' + ${#request.getRemoteUser()}"></div>
+    </th:block>
+    <div class="button" id="button-2" th:if="${#request.getRemoteUser() == null}">
+<div id="slide" th:if="${#request.getRemoteUser() == null}">
 </div>
-    <div th:unless="${#request.getRemoteUser() == null}">
+    <a href="/login">Login</a>
+</div>
+    <div class="button" id="button-2" th:unless="${#request.getRemoteUser() == null}">
+    <div id="slide" th:unless="${#request.getRemoteUser() == null}"></div>
         <a href="/logout">logout</a>
     </div>
-</h3>
-<br>
-This is the home page.
-<br>
-To rate or save a place/parking/taxi the user has to be registered...
-<br>
+</div>
+<div id="body">
 <div class="sub-main">
-<a href="/place/list-all" class="button-three">Place</a>
+<a href="/place/list-all" class="button-three" style="bottom: -385px;
+    left: 200px;">Place</a>
 </div>
 <br>
 <div  class="sub-main">
-<a href="/parking/list-all" class="button-three">Parking</a>
+<a href="/parking/list-all" class="button-three" style="    bottom: -296px;
+    left: 1200px;">Parking</a>
 </div>
 <br>
 <div class="sub-main">
-<a href="/taxi/list-all" class="button-three">Taxi</a>
+<a href="/taxi/list-all" class="button-three" style="    bottom: -207px;
+    left: 671px;">Taxi</a>
 </div>
 <br>
+</div>
 </body>
 </html>

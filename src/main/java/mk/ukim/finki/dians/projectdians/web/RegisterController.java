@@ -24,6 +24,16 @@ public class RegisterController {
         return "register";
     }
 
+    /**
+     *
+     * @param name - Makes new user with given name
+     * @param email - Makes new user with given email
+     * @param password - Makes new user with given password
+     * @param username - Makes new user with given username
+     * @param surname - Makes new user with given surname
+     * @param role - Makes new user with given role
+     * @return login.html
+     */
     @PostMapping
     public String toLoginPage(@RequestParam String name, @RequestParam String email, @RequestParam String password, @RequestParam String username, @RequestParam String surname, @RequestParam Role role) {
         userService.Register(username, name, surname, email, password, role);
