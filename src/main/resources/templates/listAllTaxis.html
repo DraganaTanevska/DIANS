@@ -68,7 +68,9 @@
                 <td>
                 <th:block sec:authorize="hasRole('ROLE_ADMIN')">
                     <a class="EDR" th:href="@{'/taxi/edit-form/{id}' (id=${taxi.getId()})}">Edit</a>
+                    <br>
                     <a class="EDR" th:href="@{'/taxi/delete/{id}' (id=${taxi.getId()})}">Delete</a>
+                    <br>
                 </th:block>
                  <a class="EDR" th:href="@{'/rating/add-new/{id}' (id=${taxi.getId()})}">Rate me!</a>
                 </td>

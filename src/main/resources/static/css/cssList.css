@@ -2,9 +2,11 @@ a{
     -webkit-appearance: button;
     -moz-appearance: button;
     -appearance: button;
-    width: 200px;
     text-align: center;
     text-decoration: none;
+}
+.wClass{
+    width: 200px;
 }
 td{
     width: 300px;
@@ -12,6 +14,7 @@ td{
 }
 body{
     background: #2a2b2c;
+    color: white;
     height: 100%;
     margin:0;
     width: 100%;
@@ -25,6 +28,7 @@ body{
 }
 td{
 
+    border-bottom: 2px solid #BFC0C0 !important;
     border-bottom: 2px solid #BFC0C0 !important;
 }
 .button-three {

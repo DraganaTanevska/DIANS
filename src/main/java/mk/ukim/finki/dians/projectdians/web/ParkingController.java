@@ -106,7 +106,7 @@ public class ParkingController {
     /**
      * this function gets distance from user's location to a selected place
      *
-     * @param idParking - the place to get distance to.
+     * @param id - the place to get distance to.
      * @param latitude  - user latitude.
      * @param longitude - user longitude.
      * @return listAllParkings.html
@@ -115,11 +115,11 @@ public class ParkingController {
      */
 
     @PostMapping("/distance")
-    public String distance(@RequestParam(required = false) Long idParking,
+    public String distance(@RequestParam(required = false) Long id,
                            @RequestParam(required = false) String latitude,
                            @RequestParam(required = false) String longitude,
                            Model model) throws IOException, InterruptedException {
-        Parking place = parkingService.findById(idParking);
+        Parking place = parkingService.findById(id);
         String DestinationLat = place.getLat();
         String DestinationLon = place.getLon();
         String latOrigin = latitude;

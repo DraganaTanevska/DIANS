@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/cssList.css">
+    <script type="text/javascript" th:src="@{/js/getDistanceJS.js}"></script>
     <title>Parking page</title>
 </head>
 <body>
@@ -25,12 +26,14 @@
 <div class="body">
 <p>Click the button to get your coordinates.</p>
 
-<button id="tryit" onclick="getLocation()" class="form-button">Try It</button>
+<button id="tryit" onclick="getLocation()" class="form-button,wClass">Get my location!</button>
+
 <form action="/parking/distance" method="POST">
     <div id="forma"></div>
     <div id="demo"></div>
-    <input type="submit" value="To calculate distance please select from the parking below" id="kopce" disabled="disabled" class="form-button">
+    <input type="submit" value="To calculate distance please select from the parking below!" id="kopce" disabled="disabled" class="form-button,wClass">
 </form>
+
 <div>
     Distance:
     <th:block th:text="${distance}">
@@ -105,16 +108,19 @@
                 </td>
                 <th:block sec:authorize="hasRole('ROLE_ADMIN')">
                     <td><a class="EDR" th:href="@{'/parking/edit-form/{id}' (id=${parking.getId()})}">Edit</a>
+                        <br>
                         <a class="EDR" th:href="@{'/parking/delete/{id}' (id=${parking.getId()})}">Delete</a>
+                    <br>
                 </th:block>
-                <a th:href="@{'/rating/add-new/{id}' (id=${parking.getId()})}">Add Rate for this parking</a></td>
+                <a class="EDR" th:href="@{'/rating/add-new/{id}' (id=${parking.getId()})}">Rate me!</a>
+                </td>
                 <td><input id="Radio" onclick="Prefrli(this)" type="radio" name="idRadio" th:value="${parking.getId()}" th:text="Select"></td>
             </div>
         </tr>
     </th:block>
 </table>
 
-    <script src="/static/js/getDistance.js"></script>
+
 
 </div>
 </body>

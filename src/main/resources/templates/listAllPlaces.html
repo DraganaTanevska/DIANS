@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" th:href="@{/css/cssList.css}">
+    <script type="text/javascript" th:src="@{/js/getDistanceJS.js}"></script>
     <title>Places page</title>
 </head>
 
@@ -26,36 +27,40 @@
 
 <div id="body">
 
-<form action="/place/distance" method="POST">
-    <div id="forma"></div>
-    <div id="demo"></div>
-    <input type="submit" value="To calculate distance please select from the places below" id="kopce" disabled="disabled" class="form-button">
-</form>
-<div>
-    Distance:
-    <th:block th:text="${distance}">
+    <p>Click the button to get your coordinates.</p>
 
-    </th:block>
-</div>
-<div>
-    Duration:
-    <th:block th:text="${duration}">
+    <button id="tryit" onclick="getLocation()" class="form-button, wClass">Get my location!</button>
 
-    </th:block>
-</div>
-<div>
-    Origin:
-    <th:block th:text="${origin}">
+    <form action="/place/distance" method="POST">
+        <div id="forma"></div>
+        <div id="demo"></div>
+        <input  type="submit" value="Please select a place to calculate distance!" id="kopce" disabled="disabled" class="form-button,wClass">
+    </form>
 
-    </th:block>
-</div>
-<div>
-    Destination:
-    <th:block th:text="${destination}">
+    <div>
+        Distance:
+        <th:block th:text="${distance}">
 
-    </th:block>
-</div>
-    <br>
+        </th:block>
+    </div>
+    <div>
+        Duration:
+        <th:block th:text="${duration}">
+
+        </th:block>
+    </div>
+    <div>
+        Origin:
+        <th:block th:text="${origin}">
+
+        </th:block>
+    </div>
+    <div>
+        Destination:
+        <th:block th:text="${destination}">
+
+        </th:block>
+    </div>
 <th:block sec:authorize="hasRole('ROLE_ADMIN')">
     <a class="EDR" href="/place/add-new">Add new place</a><br>
 </th:block>
@@ -111,14 +116,13 @@
                 </td>
                <td>
                    <p>Click the button to get distance </p>
-                   <button id="tryit" onclick="getLocation(this)" name="idRadio" th:value="${place.getId()}" class="form-button">Try It</button>
-               </td>
+                <td> <input class="option-input radio" id="Radio" onclick="Prefrli(this)" type="radio" name="idRadio" th:value="${place.getId()}" th:text="Select"></td>
             </tr>
         </div>
     </th:block>
 </table>
 <br>
-    <script src="/js/getDistance.js"></script>
+
 </div>
 </body>
 </html>

@@ -112,7 +112,7 @@ public class PlaceController {
     /**
      * this function gets distance from user's location to a selected place
      *
-     * @param idPlace   - the place to get distance to.
+     * @param id   - the place to get distance to.
      * @param latitude  - user latitude.
      * @param longitude - user longitude.
      * @return listAllPlaces.html
@@ -121,10 +121,10 @@ public class PlaceController {
      */
 
     @PostMapping("/distance")
-    public String distance(@RequestParam(required = false) Long idPlace,
+    public String distance(@RequestParam(required = false) Long id,
                            @RequestParam(required = false) String latitude,
                            @RequestParam(required = false) String longitude, Model model) throws IOException, InterruptedException {
-        Place place = placeService.findById(idPlace);
+        Place place = placeService.findById(id);
         String DestinationLat = place.getLat();
         String DestinationLon = place.getLon();
         String latOrigin = latitude;
