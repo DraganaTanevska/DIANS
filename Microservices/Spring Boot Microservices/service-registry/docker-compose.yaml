@@ -1,0 +1,94 @@
+version: '3'
+services:
+  db:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123.
+  app0:
+    build: .
+    image: "dians-service/service-registry-docker"
+    ports:
+      - "8761:8761"
+  app1:
+    build: .
+    image: "dians-place/user-docker"
+    ports:
+      - "9001:9001"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/dians-project
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 123.
+    depends_on:
+      - db
+      - app0
+      - app7
+  app2:
+    build: .
+    image: "dians-place/place-docker"
+    ports:
+      - "9002:9002"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/dians-project
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 123.
+    depends_on:
+      - db
+      - app0
+      - app7
+  app3:
+    build: .
+    image: "dians-taxi/taxi-docker"
+    ports:
+      - "9003:9003"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/dians-project
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 123.
+    depends_on:
+      - db
+      - app0
+      - app7
+
+  app4:
+    build: .
+    image: "dians-parking/parking-docker"
+    ports:
+      - "9004:9004"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/dians-project
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 123.
+    depends_on:
+      - db
+      - app0
+      - app7
+
+  app5:
+    build: .
+    image: "dians-rating/rating-docker"
+    ports:
+      - "9005:9005"
+    depends_on:
+      - db
+      - app0
+      - app7
+  app6:
+    build: .
+    image: "dians-web-app/web-app-docker"
+    ports:
+      - "9005:9005"
+    depends_on:
+      - db
+      - app0
+      - app7
+  app7:
+    build: .
+    image: "dians-cloud/cloud-docker"
+    ports:
+      - "9191:9191"
+    depends_on:
+      - app0

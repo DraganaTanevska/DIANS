@@ -3,7 +3,15 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Domasna3/pom.xml" />
+        <option value="$PROJECT_DIR$/Microservices/Spring Boot Microservices/Taxi/pom.xml" />
+        <option value="$PROJECT_DIR$/Microservices/Spring Boot Microservices/User/pom.xml" />
+        <option value="$PROJECT_DIR$/Microservices/Spring Boot Microservices/Place/pom.xml" />
+        <option value="$PROJECT_DIR$/Microservices/Spring Boot Microservices/Rating/pom.xml" />
+        <option value="$PROJECT_DIR$/Microservices/Spring Boot Microservices/Parking/pom.xml" />
+        <option value="$PROJECT_DIR$/Microservices/Spring Boot Microservices/cloud-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/Microservices/Spring Boot Microservices/WebApplication/pom.xml" />
+        <option value="$PROJECT_DIR$/Microservices/Spring Boot Microservices/service-registry/pom.xml" />
       </list>
     </option>
   </component>

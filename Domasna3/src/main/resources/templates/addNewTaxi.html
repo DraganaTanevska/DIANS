@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/cssList.css}">
+    <title>Add new taxi</title>
+</head>
+<body style="margin: 0;">
+<div id="navigation"><div class="button" id="button-2">
+    <div id="slide"></div><a href="/home"> Home </a> </div> <div class="button" id="button-2"> <div id="slide"></div> <a href="/aboutUs"> About Us </a></div> <div class="button" id="button-2">
+    <div id="slide"></div><a href="/contact"> Contact </a> </div>
+    <th:block th:if="${#request.getRemoteUser() != null}" >
+        <div style="display: inline-block;color: #BFC0C0" th:text=" 'Welcome ' + ${#request.getRemoteUser()}"></div>
+    </th:block>
+    <div class="button" id="button-2" th:if="${#request.getRemoteUser() == null}">
+        <div id="slide" th:if="${#request.getRemoteUser() == null}">
+        </div>
+        <a href="/login">Login</a>
+    </div>
+    <div class="button" id="button-2" th:unless="${#request.getRemoteUser() == null}">
+        <div id="slide" th:unless="${#request.getRemoteUser() == null}"></div>
+        <a href="/logout">logout</a>
+    </div>
+</div>
+<div id="body">
+<div id="forma">
+This is the page to add new taxi.
+<form method="POST", action="/taxi/add">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text"
+               name="name"
+               id="name"
+               th:value="(${taxi} != null ? ${taxi.getName()} : '')"
+               required
+               placeholder="Enter taxi name" class="form-control">
+    </div>
+    <div>
+        <label for="phoneNumber">Phone number:</label>
+        <input type="text"
+               name="phoneNumber"
+               id="phoneNumber"
+               th:value="(${taxi} != null ? ${taxi.getPhoneNumber()} : '')"
+               required
+               placeholder="Enter phone number" class="form-control">
+    </div>
+    <input type="hidden" id="id" name="id" th:value="(${taxi} != null ? ${taxi.getId()} : '')">
+    <input type="submit" name="submit" class="form-button">
+
+</form>
+<br>
+<a href="/taxi/list-all">Back</a>
+</div>
+</div>
+</body>
+</html>

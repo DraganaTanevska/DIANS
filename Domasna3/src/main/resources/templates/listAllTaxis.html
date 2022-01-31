@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/cssList.css}">
+    <title>Taxi page</title>
+</head>
+<body style="margin: 0;">
+<div id="navigation"><div class="button" id="button-2">
+    <div id="slide"></div><a href="/home"> Home </a> </div> <div class="button" id="button-2"> <div id="slide"></div> <a href="/aboutUs"> About Us </a></div> <div class="button" id="button-2">
+    <div id="slide"></div><a href="/contact"> Contact </a> </div>
+    <th:block th:if="${#request.getRemoteUser() != null}" >
+        <div style="display: inline-block;color: #BFC0C0" th:text=" 'Welcome ' + ${#request.getRemoteUser()}"></div>
+    </th:block>
+    <div class="button" id="button-2" th:if="${#request.getRemoteUser() == null}">
+        <div id="slide" th:if="${#request.getRemoteUser() == null}">
+        </div>
+        <a href="/login">Login</a>
+    </div>
+    <div class="button" id="button-2" th:unless="${#request.getRemoteUser() == null}">
+        <div id="slide" th:unless="${#request.getRemoteUser() == null}"></div>
+        <a href="/logout">logout</a>
+    </div>
+</div>
+
+<div id="body">
+<br>
+<th:block sec:authorize="hasRole('ROLE_ADMIN')">
+    <a class="EDR" href="/taxi/add-new">Add new taxi</a>
+</th:block>
+<br>
+<a class="EDR" href="/home">Back</a>
+    <br>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <form method="GET" action="/taxi/list-all">
+                    <input style="width: 100px; margin-left: 20px" type="text" name="search" class="form-control">
+                    <input style="width: 100px; margin-left: 20px" type="submit" value="Search" class="form-button">
+                </form>
+
+            </td>
+    <td>
+        <form method="GET" action="/taxi/list-all">
+            <select name="sortType" >
+                <option
+                        th:value="Name"
+                        th:text="Name">
+                </option>
+                <option  th:value="Rating"
+                         th:text="Rating">
+                </option>
+            </select>
+            <input style="width: 100px" type="submit" value="Sort" class="form-button">
+        </form>
+    </td>
+    </tr>
+    <th:block th:each="taxi:${taxis}">
+        <tr>
+            <div>
+                <td>
+                    <span name="id" th:text="${taxi.getName()}"></span>
+                    <span name="number" th:text="${taxi.getName()}"></span>
+                    <span name="rating" th:text="${taxi.getFinalRating()}"></span>
+                </td>
+                <td>
+                <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                    <a class="EDR" th:href="@{'/taxi/edit-form/{id}' (id=${taxi.getId()})}">Edit</a>
+                    <br>
+                    <a class="EDR" th:href="@{'/taxi/delete/{id}' (id=${taxi.getId()})}">Delete</a>
+                    <br>
+                </th:block>
+                 <a class="EDR" th:href="@{'/rating/add-new/{id}' (id=${taxi.getId()})}">Rate me!</a>
+                </td>
+            </div>
+        </tr>
+    </th:block>
+</table>
+<br>
+</div>
+</body>
+</html>

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DIANS.iml" filepath="$PROJECT_DIR$/DIANS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DIANS.iml" filepath="$PROJECT_DIR$/.idea/DIANS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservices/Spring Boot Microservices/Parking/Parking.iml" filepath="$PROJECT_DIR$/Microservices/Spring Boot Microservices/Parking/Parking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservices/Spring Boot Microservices/Place/Place.iml" filepath="$PROJECT_DIR$/Microservices/Spring Boot Microservices/Place/Place.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservices/Spring Boot Microservices/Rating/Rating.iml" filepath="$PROJECT_DIR$/Microservices/Spring Boot Microservices/Rating/Rating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservices/Spring Boot Microservices/Taxi/Taxi.iml" filepath="$PROJECT_DIR$/Microservices/Spring Boot Microservices/Taxi/Taxi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservices/Spring Boot Microservices/User/User.iml" filepath="$PROJECT_DIR$/Microservices/Spring Boot Microservices/User/User.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservices/Spring Boot Microservices/cloud-gateway/cloud-gateway.iml" filepath="$PROJECT_DIR$/Microservices/Spring Boot Microservices/cloud-gateway/cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservices/Spring Boot Microservices/WebApplication/dians.iml" filepath="$PROJECT_DIR$/Microservices/Spring Boot Microservices/WebApplication/dians.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Domasna3/project-DIANS.iml" filepath="$PROJECT_DIR$/Domasna3/project-DIANS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservices/Spring Boot Microservices/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/Microservices/Spring Boot Microservices/service-registry/service-registry.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ab1b01f5-4f84-4280-b15e-d2ff673a48d0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a5929435-c0af-4829-8ed7-557db90ece09.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a5929435-c0af-4829-8ed7-557db90ece09/storage_v2/_src_/database/dians-project.jcAkgA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a5929435-c0af-4829-8ed7-557db90ece09/storage_v2/_src_/database/dians-project.jcAkgA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a5929435-c0af-4829-8ed7-557db90ece09/storage_v2/_src_/database/dians-project.jcAkgA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a5929435-c0af-4829-8ed7-557db90ece09/storage_v2/_src_/database/dians-project.jcAkgA/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_55.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_55.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_55.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity5_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DIANS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-DIANS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/ProjectDiansApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/Config/CustomUsernamePasswordAuthenticationProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/Config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/Parking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/Place.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/PlaceType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/Rating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/Taxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/exceptions/ParkingIdNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/exceptions/PlaceIdNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/exceptions/TaxiIdNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/model/exceptions/UsernameAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/ParkingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/PlaceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/PlaceTypeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/RatingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/TaxiRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/ParkingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/PlaceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/PlaceTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/RatingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/TaxiService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/ParkingServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/PlaceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/PlaceTypeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/RatingServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/TaxiServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/AboutUsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/ContactController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/LogoutController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/ParkingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/PlaceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/RatingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/RegisterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/ukim/finki/dians/projectdians/web/TaxiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/cssList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/loginCSS.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/getDistanceJS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/aboutUs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addNewParking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addNewPlace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addNewRating.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addNewTaxi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listAllParkings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listAllPlaces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listAllTaxis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mk/ukim/finki/dians/projectdians/ProjectDiansApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/ProjectDiansApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/Config/CustomUsernamePasswordAuthenticationProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/Config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/Parking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/Place.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/PlaceType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/Rating.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/Taxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/exceptions/ParkingIdNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/exceptions/PlaceIdNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/exceptions/TaxiIdNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/model/exceptions/UsernameAlreadyExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/repository/ParkingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/repository/PlaceRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/repository/PlaceTypeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/repository/RatingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/repository/TaxiRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/ParkingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/PlaceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/PlaceTypeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/RatingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/TaxiService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/impl/ParkingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/impl/PlaceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/impl/PlaceTypeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/impl/RatingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/impl/TaxiServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/web/AboutUsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/web/ContactController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/web/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/web/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/web/LogoutController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/web/ParkingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/web/PlaceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/web/RatingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/web/RegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/ukim/finki/dians/projectdians/web/TaxiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/cssList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/loginCSS.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/getDistanceJS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/aboutUs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/addNewParking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/addNewPlace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/addNewRating.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/addNewTaxi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/listAllParkings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/listAllPlaces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/listAllTaxis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mk/ukim/finki/dians/projectdians/ProjectDiansApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="24TpQGoBylQ8wRs9oyrPuLe2qrJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.ServiceRegistryApplication">
+    <configuration name="CloudGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.dians.cloudgateway.CloudGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Parking" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.dians.parking.ParkingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Place" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.dians.place.PlaceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectDiansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="project-DIANS" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.dians.projectdians.ProjectDiansApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RatingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Rating" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.dians.rating.RatingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.dians.serviceregistry.ServiceRegistryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaxiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Taxi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.dians.taxi.TaxiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="User" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.dians.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dians" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mk.ukim.finki.dians.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab1b01f5-4f84-4280-b15e-d2ff673a48d0" name="Changes" comment="" />
+      <created>1643664413865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643664413865</updated>
+      <workItem from="1643664415385" duration="87000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

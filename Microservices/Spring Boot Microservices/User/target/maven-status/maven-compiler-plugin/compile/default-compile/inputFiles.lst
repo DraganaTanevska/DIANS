@@ -1,0 +1,11 @@
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\model\exceptions\UsernameAlreadyExistsException.java
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\service\UserServiceImpl.java
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\service\UserService.java
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\model\Config\CustomUsernamePasswordAuthenticationProvider.java
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\repository\UserRepository.java
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\UserApplication.java
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\web\LoginController.java
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\model\User.java
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\web\LogoutController.java
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\model\Role.java
+C:\Users\Dragana\IdeaProjects\Spring Boot Microservices\User\src\main\java\mk\ukim\finki\dians\user\web\RegisterController.java
