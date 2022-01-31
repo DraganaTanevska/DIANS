@@ -21,6 +21,5 @@ function getLocation() {
     }
 }
 function showPosition(position) {
-    xxx.innerHTML = "<input type='hidden' name='latitude' value="+ position.coords.latitude +">"+
-        "<br><input type='hidden' name='longitude' value="+ position.coords.longitude+">"
+    document.getElementById("demo").innerHTML ="<input type='hidden' name='latitude' value="+ position.coords.latitude +"/>" + "<br><input type='hidden' name='longitude' value="+position.coords.longitude+">"
 }
